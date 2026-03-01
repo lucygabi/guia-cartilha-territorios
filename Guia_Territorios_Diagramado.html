@@ -1,0 +1,2203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia de Homologações, Revalidações e Reconfigurações Territoriais</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+@page{size:A4;margin:0}
+:root{
+--azul:#183EFF;--azul-escuro:#022A69;--azul-medio:#003DA5;
+--verde:#00C100;--verde-claro:#E6FFE6;
+--cinza-escuro:#3C3C3C;--cinza-medio:#434343;--cinza:#555555;--cinza-claro:#666666;
+--bg-light:#F5F5F5;--bg-lighter:#EDEDED;--branco:#FFF;
+--laranja:#E65100;--laranja-claro:#FFF3E0;
+--amarelo:#FFC107;--amarelo-claro:#FFF8E1;
+}
+body{font-family:'Aptos','Calibri','Segoe UI',sans-serif;color:var(--cinza-escuro);line-height:1.65;background:#ccc;font-size:10.5pt}
+.page{width:210mm;min-height:297mm;margin:8mm auto;background:var(--branco);box-shadow:0 2px 10px rgba(0,0,0,.15);position:relative;overflow:visible;page-break-after:always;display:flex;flex-direction:column}
+.page-content{padding:12mm 24mm 8mm 24mm;flex:1}
+.page-header{display:none}
+.page-header-accent{display:none}
+.page-sidebar{position:absolute;top:0;left:0;width:6mm;height:100%;background:url('img/barra-lateral.png') repeat-y;background-size:6mm auto;z-index:2}
+.page-sidebar-right{position:absolute;top:0;right:0;width:6mm;height:100%;background:url('img/barra-lateral.png') repeat-y;background-size:6mm auto;z-index:2}
+.page-footer{padding:2.5mm 15mm 2.5mm 10mm;font-size:7.5pt;color:#999;display:flex;justify-content:space-between;align-items:center;border-top:1.5pt solid var(--azul);background:#fff;z-index:3;flex-shrink:0}
+.page-footer img.footer-logo{height:9mm;margin-right:3mm}
+.page-number{background:var(--azul);color:#fff;width:7mm;height:7mm;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8pt;font-weight:700}
+/* CAPA */
+.cover{display:flex;flex-direction:column;height:297mm;position:relative}
+.cover-top{height:10mm;background:linear-gradient(90deg,var(--azul),var(--azul-medio))}
+.cover-accent{height:3mm;background:var(--verde)}
+.cover-ministry{padding:8mm 22mm 4mm;text-align:center}
+.cover-ministry-text{font-family:'Tahoma',sans-serif;font-size:10pt;color:var(--azul-escuro);text-transform:uppercase;letter-spacing:1.5px;font-weight:700}
+.cover-ministry-sub{font-size:8.5pt;color:var(--cinza);margin-top:1mm}
+.cover-main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 25mm;position:relative}
+.cover-deco{position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;z-index:0}
+.cover-deco .c1{position:absolute;width:280mm;height:280mm;border-radius:50%;background:var(--azul);opacity:.04;top:-70mm;right:-90mm}
+.cover-deco .c2{position:absolute;width:200mm;height:200mm;border-radius:50%;background:var(--verde);opacity:.05;bottom:-50mm;left:-50mm}
+.cover-badge{background:var(--azul);color:#fff;padding:3.5mm 10mm;border-radius:5px;font-family:'Tahoma',sans-serif;font-size:9pt;text-transform:uppercase;letter-spacing:2px;font-weight:700;position:relative;z-index:1;text-align:center}
+.cover-title-box{position:relative;z-index:1;text-align:center;margin-top:10mm}
+.cover-label{font-family:'Tahoma',sans-serif;font-size:11pt;color:var(--azul);text-transform:uppercase;letter-spacing:3px;font-weight:700;margin-bottom:4mm}
+.cover-title{font-family:'Verdana',sans-serif;font-size:24pt;font-weight:800;color:var(--azul-escuro);line-height:1.2;margin-bottom:4mm}
+.cover-title span{color:var(--verde)}
+.cover-subtitle{font-size:12pt;color:var(--cinza);font-weight:400;line-height:1.4}
+.cover-bottom-bar{height:4mm;background:linear-gradient(90deg,var(--azul),var(--verde))}
+.cover-bottom{padding:6mm 22mm;display:flex;justify-content:space-between;align-items:flex-end}
+.cover-year{font-family:'Tahoma',sans-serif;font-size:11pt;color:var(--azul-escuro);font-weight:700}
+/* TIPOGRAFIA */
+h1{font-family:'Verdana',sans-serif;font-size:18pt;font-weight:800;color:var(--azul-escuro);margin-bottom:4mm;line-height:1.2}
+h2{font-family:'Tahoma',sans-serif;font-size:14pt;font-weight:700;color:var(--azul-escuro);margin:5mm 0 3mm;padding-bottom:2mm;border-bottom:2.5pt solid var(--verde);line-height:1.3}
+h3{font-family:'Tahoma',sans-serif;font-size:11.5pt;font-weight:700;color:var(--azul);margin:4mm 0 2mm}
+h4{font-size:10.5pt;font-weight:700;color:var(--azul-escuro);margin:3mm 0 1.5mm}
+p{margin-bottom:2.5mm;text-align:justify;hyphens:auto}
+/* SEÇÃO NUMERADA */
+.section-bar{background:linear-gradient(135deg,var(--azul),var(--azul-medio));color:#fff;padding:4.5mm 6mm;border-radius:5px;margin:5mm 0 4mm;display:flex;align-items:center;gap:4mm}
+.section-num{min-width:11mm;height:11mm;background:rgba(255,255,255,.2);border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'Verdana',sans-serif;font-size:15pt;font-weight:800}
+.section-bar h2{color:#fff;margin:0;padding:0;border:none;font-size:13pt}
+/* CARDS */
+.card{border-radius:5px;padding:4mm 5mm 4mm 6mm;margin:3mm 0;position:relative}
+.card-blue{background:#E8EEFF;border-left:4pt solid var(--azul)}
+.card-green{background:var(--verde-claro);border-left:4pt solid var(--verde)}
+.card-yellow{background:var(--amarelo-claro);border-left:4pt solid var(--amarelo)}
+.card-orange{background:var(--laranja-claro);border-left:4pt solid var(--laranja)}
+.card-title{font-family:'Tahoma',sans-serif;font-weight:700;font-size:10pt;margin-bottom:1.5mm}
+.card-blue .card-title{color:var(--azul)}
+.card-green .card-title{color:#008000}
+.card-yellow .card-title{color:#B8860B}
+.card-orange .card-title{color:var(--laranja)}
+.card p,.card ul,.card ol{font-size:10pt;margin-bottom:1.5mm}
+/* BADGES */
+.badge{display:inline-block;padding:1.5mm 4mm;border-radius:3px;font-family:'Tahoma',sans-serif;font-size:8.5pt;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin:3mm 0 2mm}
+.badge-blue{background:var(--azul);color:#fff}
+.badge-green{background:var(--verde);color:#fff}
+.badge-orange{background:var(--laranja);color:#fff}
+.badge-dark{background:var(--azul-escuro);color:#fff}
+/* STEPS */
+.step{display:flex;gap:3.5mm;margin:2.5mm 0;align-items:flex-start}
+.step-n{min-width:8mm;height:8mm;background:var(--azul);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9.5pt;font-weight:700;flex-shrink:0;margin-top:.5mm}
+.step-c{flex:1}
+.step-c h4{color:var(--azul-escuro);margin:0 0 1mm;font-size:10pt}
+.step-c p,.step-c ul{font-size:10pt}
+/* LISTAS */
+ul{margin:2mm 0 2.5mm 5mm;padding-left:3mm}
+ul li{margin-bottom:1.5mm}
+ul li::marker{color:var(--azul)}
+ol{margin:2mm 0 2.5mm 5mm;padding-left:3mm}
+ol li{margin-bottom:1.5mm}
+ol li::marker{color:var(--azul-escuro);font-weight:700}
+/* TABELAS */
+table{width:100%;border-collapse:collapse;margin:3mm 0;font-size:9.5pt}
+table thead th{background:var(--azul);color:#fff;padding:2.5mm 3mm;text-align:left;font-weight:600;font-size:9pt}
+table tbody td{padding:2.5mm 3mm;border-bottom:.5pt solid #ddd;vertical-align:top}
+table tbody tr:nth-child(even){background:var(--bg-light)}
+/* SIGLAS */
+.siglas{display:grid;grid-template-columns:auto 1fr;gap:1.5mm 5mm;margin:3mm 0}
+.sigla-t{font-weight:700;color:var(--azul);font-size:10pt}
+.sigla-d{font-size:10pt;color:var(--cinza)}
+/* SUMÁRIO */
+.toc-item{display:flex;align-items:baseline;padding:1.5mm 0;border-bottom:1px dotted #ccc}
+.toc-section{margin-top:3mm;border-bottom:none}
+.toc-num{display:inline-flex;align-items:center;justify-content:center;width:7mm;height:7mm;background:var(--azul);color:#fff;font-size:8.5pt;font-weight:700;border-radius:3px;margin-right:2mm;flex-shrink:0}
+.toc-t{flex:1;font-size:10pt}
+.toc-section .toc-t{font-family:'Tahoma',sans-serif;font-weight:700;color:var(--azul-escuro);font-size:10.5pt}
+.toc-p{font-weight:700;color:var(--azul);min-width:8mm;text-align:right;font-size:10pt}
+.toc-sub{padding-left:9mm}
+/* RESULTADOS */
+.result-box{display:flex;gap:4mm;margin:3mm 0}
+.result-ok{flex:1;background:var(--verde-claro);border:1.5pt solid var(--verde);border-radius:5px;padding:3.5mm}
+.result-no{flex:1;background:var(--laranja-claro);border:1.5pt solid var(--laranja);border-radius:5px;padding:3.5mm}
+.result-ok h4{color:#008000;font-size:10pt;margin-bottom:1mm}
+.result-no h4{color:var(--laranja);font-size:10pt;margin-bottom:1mm}
+.result-ok p,.result-no p{font-size:9.5pt;margin:0}
+/* FLUXOGRAMA */
+.flow{display:flex;flex-direction:column;align-items:center;gap:0;margin:4mm 0}
+.flow-box{width:85%;padding:3mm 4mm;border-radius:5px;text-align:center;font-size:9.5pt;font-weight:600}
+.flow-blue{background:#E8EEFF;border:1.5pt solid var(--azul);color:var(--azul-escuro)}
+.flow-green{background:var(--verde-claro);border:1.5pt solid var(--verde);color:#006600}
+.flow-orange{background:var(--laranja-claro);border:1.5pt solid var(--laranja);color:var(--laranja)}
+.flow-arrow{width:0;height:0;border-left:3mm solid transparent;border-right:3mm solid transparent;border-top:3.5mm solid var(--azul);margin:1mm 0}
+/* MODELOS */
+.modelo-h{background:linear-gradient(135deg,var(--azul-escuro),var(--azul));color:#fff;padding:4mm 6mm;border-radius:5px 5px 0 0;margin-top:4mm}
+.modelo-h h3{color:#fff;margin:0;font-size:10.5pt}
+.modelo-b{border:1pt solid #ddd;border-top:none;border-radius:0 0 5px 5px;padding:5mm;background:#FAFAFA;font-size:10pt}
+.campo{color:var(--azul);font-style:italic}
+.modelo-b h4{color:var(--azul-escuro);font-size:10pt;margin:3mm 0 1.5mm;border-bottom:1px solid #eee;padding-bottom:1mm}
+.assin{border-bottom:1pt solid #999;margin:3.5mm 0 1mm;width:70%}
+/* FICHA */
+.ficha-cargo{font-size:9pt;color:var(--cinza-claro);margin-bottom:.5mm}
+.ficha-nome{font-size:10pt;font-weight:600;color:var(--azul-escuro);margin-bottom:3mm}
+/* DIVIDER */
+.div{height:1pt;background:linear-gradient(90deg,transparent,var(--azul),var(--verde),var(--azul),transparent);margin:4mm 0}
+/* REFS */
+.ref{padding:2mm 0 2mm 4mm;border-left:2.5pt solid var(--azul);margin-bottom:2mm;font-size:9.5pt;color:var(--cinza)}
+.footnote{font-size:8.5pt;color:#888;border-top:1pt solid #ddd;margin-top:4mm;padding-top:2mm;font-style:italic}
+/* TOOLBAR EDIÇÃO */
+.edit-toolbar{position:fixed;top:0;left:0;right:0;background:#1a1a2e;color:#fff;z-index:9999;box-shadow:0 3px 12px rgba(0,0,0,.4);font-family:'Segoe UI',sans-serif;font-size:9pt;display:flex;flex-direction:column}
+.toolbar-row{display:flex;align-items:center;gap:6px;padding:5px 15px}
+.toolbar-row-1{background:linear-gradient(135deg,#022A69,#183EFF);padding:6px 15px}
+.toolbar-row-2{background:#2a2a4a;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap}
+.toolbar-title{font-weight:700;font-size:11pt;display:flex;align-items:center;gap:8px;margin-right:auto}
+.toolbar-title svg{width:18px;height:18px}
+.toolbar-sep{width:1px;height:22px;background:rgba(255,255,255,.2);margin:0 4px}
+.edit-toolbar button,.edit-toolbar select{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2);padding:4px 10px;border-radius:4px;cursor:pointer;font-size:9pt;transition:all .15s;font-family:inherit}
+.edit-toolbar button:hover,.edit-toolbar select:hover{background:rgba(255,255,255,.25)}
+.edit-toolbar button.active{background:rgba(255,255,255,.3);box-shadow:inset 0 0 0 1px rgba(255,255,255,.4)}
+.edit-toolbar button.btn-save{background:#00C100;border-color:#00A000;font-weight:600;padding:5px 14px}
+.edit-toolbar button.btn-save:hover{background:#00A000}
+.edit-toolbar button.btn-pdf{background:#E65100;border-color:#C44000;font-weight:600;padding:5px 14px}
+.edit-toolbar button.btn-pdf:hover{background:#C44000}
+.edit-toolbar select{padding:4px 6px;min-width:50px}
+.edit-toolbar select option{background:#333;color:#fff}
+.edit-toolbar input[type="color"]{width:28px;height:24px;border:1px solid rgba(255,255,255,.3);border-radius:4px;cursor:pointer;padding:1px;background:transparent}
+.toolbar-label{font-size:8pt;opacity:.6;margin-right:2px;white-space:nowrap}
+.toolbar-group{display:flex;align-items:center;gap:3px;background:rgba(255,255,255,.05);border-radius:5px;padding:2px 6px}
+.edit-toolbar button.btn-mode{background:#7C3AED;border-color:#6D28D9;font-weight:600}
+.edit-toolbar button.btn-mode:hover{background:#6D28D9}
+.status{font-size:8pt;opacity:.7;margin-left:8px}
+body{padding-top:68px}
+/* Editable highlights */
+.page-content[contenteditable="true"]:focus{outline:2px dashed rgba(24,62,255,.3);outline-offset:2px}
+.page-content[contenteditable="true"] .campo{background:rgba(24,62,255,.1);padding:1px 3px;border-radius:2px;cursor:text;border-bottom:1px dashed var(--azul)}
+.page-content[contenteditable="true"] .campo:hover{background:rgba(24,62,255,.2)}
+.page-content[contenteditable="true"] img{cursor:pointer;transition:opacity .2s}
+.page-content[contenteditable="true"] img:hover{opacity:.7;outline:2px solid var(--azul)}
+.cover *[contenteditable="true"]:focus{outline:2px dashed rgba(24,62,255,.3)}
+/* Botão inserir parágrafo entre elementos */
+.insert-hint{display:none;position:absolute;left:50%;transform:translateX(-50%);background:var(--azul);color:#fff;font-size:8pt;padding:2px 10px;border-radius:10px;cursor:pointer;z-index:10;opacity:.7;transition:opacity .2s;white-space:nowrap}
+.insert-hint:hover{opacity:1}
+/* MODO CONTÍNUO */
+body.modo-continuo .page{min-height:auto!important;height:auto!important;margin:4mm auto;page-break-after:auto}
+body.modo-continuo .page-footer{display:none}
+body.modo-continuo .page-sidebar,body.modo-continuo .page-sidebar-right{height:100%}
+body.modo-continuo .cover{height:auto!important;min-height:auto!important}
+@media print{
+.edit-toolbar{display:none!important}
+.insert-hint{display:none!important}
+body{background:#fff;padding-top:0}
+body.modo-continuo .page-footer{display:flex}
+.page{margin:0;box-shadow:none;width:210mm;min-height:297mm;overflow:visible}
+body.modo-continuo .page{min-height:297mm!important}
+.page-content[contenteditable="true"]:focus{outline:none}
+.campo{border-bottom:none!important;background:transparent!important}
+}
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<div class="page cover" style="background:var(--branco);position:relative">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="cover-ministry" style="padding-top:12mm">
+<div class="cover-ministry-text">Ministério do Desenvolvimento Agrário<br>e Agricultura Familiar</div>
+<div class="cover-ministry-sub">Secretaria de Governança Fundiária, Desenvolvimento Territorial e Socioambiental</div>
+</div>
+<div class="cover-main">
+<div class="cover-deco">
+<div class="c1"></div><div class="c2"></div>
+<img src="img/mapa-territorios.png" alt="Mapa dos Territórios" style="position:absolute;right:-15mm;top:50%;transform:translateY(-50%);width:130mm;opacity:.12;z-index:0">
+</div>
+<div style="display:flex;align-items:center;gap:5mm;position:relative;z-index:1;margin-bottom:6mm">
+<img src="img/logo-mapa-brasil.png" alt="Logo Brasil" style="height:28mm">
+<img src="img/logo-territorios-cidadania.png" alt="Territórios da Cidadania" style="height:22mm">
+</div>
+<div class="cover-badge">Programa Nacional de Desenvolvimento Territorial Sustentável</div>
+<div class="cover-title-box">
+<h1 class="cover-title">Guia de<br>Homologações,<br><span>Revalidações</span> e<br><span>Reconfigurações</span><br>Territoriais</h1>
+</div>
+</div>
+<div class="cover-bottom">
+<div class="cover-year">Brasília, 2026</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span></div>
+</div>
+
+<!-- FICHA TÉCNICA -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h2 style="text-align:center;border:none">Ficha Técnica</h2>
+<div class="div"></div>
+<div class="ficha-cargo">Presidente da República</div>
+<div class="ficha-nome">Luiz Inácio Lula da Silva</div>
+<div class="ficha-cargo">Ministro de Estado do Desenvolvimento Agrário e Agricultura Familiar</div>
+<div class="ficha-nome">Luiz Paulo Teixeira</div>
+<div class="ficha-cargo">Secretária-Executiva do Ministério do Desenvolvimento Agrário e Agricultura Familiar</div>
+<div class="ficha-nome">Fernanda Machiaveli Morão de Oliveira</div>
+<div class="ficha-cargo">Secretário de Governança Fundiária, Desenvolvimento Territorial e Socioambiental</div>
+<div class="ficha-nome">Moisés Savian</div>
+<div class="ficha-cargo">Secretário-Executivo do Conselho Nacional de Desenvolvimento Rural Sustentável</div>
+<div class="ficha-nome">Samuel de Albuquerque Carvalho</div>
+<div class="ficha-cargo">Diretora do Departamento de Desenvolvimento Territorial e Socioambiental</div>
+<div class="ficha-nome">Ana Elsa Muranini</div>
+<div class="ficha-cargo">Coordenadora-Geral de Desenvolvimento Territorial, Educação no Campo e Ação Cultural</div>
+<div class="ficha-nome">Estela Guilherme Zeferino</div>
+<div class="div"></div>
+<h4>Equipe de Elaboração do Documento</h4>
+<p>Débora Fernandes Barizão<br>Ademir Antonio Cazella<br>Edivar Ferreira de Noronha Jr.<br>Ivaldo de Sousa Moreira</p>
+<h4>Revisão</h4><p>XXXXXX</p>
+<h4>Projeto Gráfico e Diagramação</h4><p>Luciana Gabriella da Silva</p>
+<div class="div"></div>
+<p style="font-size:9pt;color:#888">Secretaria de Governança Fundiária, Desenvolvimento Territorial e Socioambiental (SFDT)<br>SBN Q. 1, Bl. B, Ed. Palácio do Desenvolvimento, 3º andar<br>CEP: 70057-900 - Brasília/DF<br>Telefone: 3276-4483<br>e-mail: sfdt@mda.gov.br</p>
+<p style="font-weight:600;margin-top:3mm">Brasília, 2026</p>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">2</div></div>
+</div>
+
+<!-- SUMÁRIO -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h2 style="text-align:center">Sumário</h2>
+<div class="toc-item"><span class="toc-t">LISTA DE SIGLAS</span><span class="toc-p">4</span></div>
+<div class="toc-item"><span class="toc-t" style="font-weight:600">INTRODUÇÃO</span><span class="toc-p">5</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">O que é o Programa Nacional de Desenvolvimento Territorial Sustentável</span><span class="toc-p">6</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Para que serve este Guia?</span><span class="toc-p">6</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">O que são os Territórios da Cidadania?</span><span class="toc-p">6</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">O que são os Codeter e quais funções desempenham?</span><span class="toc-p">7</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Critérios obrigatórios para a composição dos Codeter</span><span class="toc-p">9</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">E o Condraf, o que é e por que ele importa?</span><span class="toc-p">10</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">O que o Condraf faz neste processo?</span><span class="toc-p">10</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Quem faz parte do Condraf?</span><span class="toc-p">10</span></div>
+<div class="toc-item toc-section"><span class="toc-num">1</span><span class="toc-t">REVALIDAÇÃO DA HOMOLOGAÇÃO DE TERRITÓRIOS</span><span class="toc-p">11</span></div>
+<div class="toc-item toc-section"><span class="toc-num">2</span><span class="toc-t">HOMOLOGAÇÃO DE NOVOS TERRITÓRIOS</span><span class="toc-p">14</span></div>
+<div class="toc-item toc-section"><span class="toc-num">3</span><span class="toc-t">HOMOLOGAÇÃO DE TERRITÓRIOS JÁ INSTITUÍDOS PELOS GOVERNOS ESTADUAIS</span><span class="toc-p">18</span></div>
+<div class="toc-item toc-section"><span class="toc-num">4</span><span class="toc-t">RECONFIGURAÇÃO DE TERRITÓRIOS</span><span class="toc-p">20</span></div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">3</div></div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h2 style="text-align:center">Sumário <span style="font-size:10pt;color:#999">(continuação)</span></h2>
+<div class="toc-item" style="margin-top:3mm"><span class="toc-t" style="font-weight:600">REFERÊNCIAS</span><span class="toc-p">24</span></div>
+<div class="toc-item"><span class="toc-t" style="font-weight:600">MODELOS DE DOCUMENTOS</span><span class="toc-p">25</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Modelo 1 – Ata da Reunião de Aprovação da Declaração de Revalidação</span><span class="toc-p">26</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Modelo 2 – Declaração de Revalidação da Homologação do Território</span><span class="toc-p">28</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Modelo 3 – Documento de Constituição da Comissão de Implantação</span><span class="toc-p">30</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Modelo 4 – Documento de Justificativa para a Criação do Território</span><span class="toc-p">32</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Modelo 5 – Regimento Interno do Codeter</span><span class="toc-p">34</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Modelo 6 – Ata da Reunião Deliberativa sobre a Criação do Território</span><span class="toc-p">37</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Modelo 7 – Ata da Assembleia ou Fórum Municipal</span><span class="toc-p">39</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Modelo 8 – Ofício de Solicitação da Homologação de Novo Território</span><span class="toc-p">41</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Modelo 9 – Declaração de Homologação de Território pelo Governo Estadual</span><span class="toc-p">43</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Modelo 10 – Ata da Reunião do Codeter de Aprovação do Pedido de Homologação pelo Governo Federal</span><span class="toc-p">45</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Modelo 11 – Ofício de Solicitação da Reconfiguração do Território</span><span class="toc-p">47</span></div>
+<div class="toc-item toc-sub"><span class="toc-t">Modelo 12 – Ata da Reunião do Codeter com Manifestação Favorável à Reconfiguração do Território</span><span class="toc-p">49</span></div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">4</div></div>
+</div>
+
+<!-- LISTA DE SIGLAS -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h2>Lista de Siglas</h2>
+<div class="siglas">
+<span class="sigla-t">ATER</span><span class="sigla-d">Assistência Técnica e Extensão Rural</span>
+<span class="sigla-t">CAF</span><span class="sigla-d">Cadastros da Agricultura Familiar</span>
+<span class="sigla-t">CBST</span><span class="sigla-d">Cesta de Bens e Serviços Territoriais</span>
+<span class="sigla-t">CMDR</span><span class="sigla-d">Conselho Municipal de Desenvolvimento Rural</span>
+<span class="sigla-t">CODETER</span><span class="sigla-d">Colegiado de Desenvolvimento Territorial</span>
+<span class="sigla-t">CONDRAF</span><span class="sigla-d">Conselho Nacional de Desenvolvimento Rural Sustentável</span>
+<span class="sigla-t">GT</span><span class="sigla-d">Grupo de Trabalho</span>
+<span class="sigla-t">LGBTQIA+</span><span class="sigla-d">Lésbicas, Gays, Bissexuais, Transgêneros, Queer, Intersexo, Assexuais e outras identidades</span>
+<span class="sigla-t">MDA</span><span class="sigla-d">Ministério do Desenvolvimento Agrário e Agricultura Familiar</span>
+<span class="sigla-t">RNCT</span><span class="sigla-d">Rede Nacional de Colegiados Territoriais</span>
+<span class="sigla-t">PCT</span><span class="sigla-d">Povos e Comunidades Tradicionais</span>
+<span class="sigla-t">PNDTS</span><span class="sigla-d">Programa Nacional de Desenvolvimento Territorial Sustentável</span>
+<span class="sigla-t">PRONAF</span><span class="sigla-d">Programa Nacional de Fortalecimento da Agricultura Familiar</span>
+<span class="sigla-t">PTC</span><span class="sigla-d">Programa Territórios da Cidadania</span>
+<span class="sigla-t">SFDT/MDA</span><span class="sigla-d">Secretaria de Governança Fundiária, Desenvolvimento Territorial e Socioambiental do MDA</span>
+<span class="sigla-t">SIT</span><span class="sigla-d">Sistema de Informações Territoriais</span>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">5</div></div>
+</div>
+
+<!-- INTRODUÇÃO p1 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h1>Introdução</h1>
+<h3>O que é o Programa Nacional de Desenvolvimento Territorial Sustentável</h3>
+<p>O Programa Nacional de Desenvolvimento Territorial Sustentável foi instituído pelo Ministério do Desenvolvimento Agrário e Agricultura Familiar do Governo do Brasil em 2025. Ele tem a finalidade de fortalecer a gestão participativa e integrada dos territórios rurais e promover o desenvolvimento territorial sustentável nos Territórios da Cidadania.</p>
+<p>São objetivos do PTC:</p>
+<ul>
+<li>Aumentar a produção de alimentos saudáveis e agroecológicos.</li>
+<li>Facilitar o acesso das comunidades rurais, agricultores familiares, jovens e mulheres às políticas públicas.</li>
+<li>Reduzir a pobreza no meio rural.</li>
+<li>Apoiar a adaptação às mudanças climáticas.</li>
+<li>Promover o bem-viver no campo.</li>
+</ul>
+<div class="footnote">A adoção do codinome Territórios da Cidadania remete ao programa homônimo, criado pelo Governo Federal em 2008, cuja principal característica foi o fomento a parcerias interministeriais com o objetivo de ampliar a abrangência, o monitoramento e a territorialização das políticas públicas.</div>
+<div class="div"></div>
+<h3>Para que serve este Guia?</h3>
+<p>Este Guia foi elaborado para orientar, de maneira simples e prática, como os Territórios da Cidadania podem solicitar ao Conselho Nacional de Desenvolvimento Rural Sustentável (Condraf) a realização dos seguintes processos:</p>
+<ul>
+<li><strong>Revalidação</strong> (renovação do reconhecimento do território)</li>
+<li><strong>Homologação</strong> (criação de um novo território)</li>
+<li><strong>Reconfiguração</strong> (ajuste nos limites, na composição ou no nome do território)</li>
+</ul>
+<p>O objetivo é apoiar lideranças comunitárias, gestores públicos e organizações da sociedade civil na condução democrática desses processos, fortalecendo a participação social e a representatividade territorial, com atenção à diversidade e à inclusão de mulheres, jovens, idosos, pessoas negras, povos indígenas, quilombolas e demais povos e comunidades tradicionais.</p>
+<h3>O que são os Territórios da Cidadania?</h3>
+<p>Os Territórios da Cidadania são espaços físicos geográficos continuamente definidos, compreendendo cidades e campos, caracterizados por critérios multidimensionais — tais como o ambiente, a economia, a sociedade, a cultura, a política e as instituições — com uma população com grupos sociais relativamente distintos que se relacionam interna e externamente por meio de processos específicos, onde se pode distinguir um ou mais elementos que indicam identidade e coesão social, cultural e territorial.</p>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">6</div></div>
+</div>
+
+<!-- INTRODUÇÃO p2 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<p>Os Territórios da Cidadania são o recorte de referência para o planejamento, a articulação e a participação social. É nesses espaços que as políticas públicas e as ações de desenvolvimento territorial sustentável são articuladas, debatidas e encaminhadas pelos Colegiados de Desenvolvimento Territorial.</p>
+<div class="card card-green">
+<div class="card-title">Território é onde a vida acontece.</div>
+<p>É o lugar das relações, dos saberes, do trabalho e da cultura. Um Território da Cidadania reúne comunidades e municípios com identidades e desafios em comum, para planejar soluções com participação social.</p>
+</div>
+<h3>O que são os Codeter e quais funções desempenham?</h3>
+<p>Os Colegiados de Desenvolvimento Territorial (Codeter) são instâncias de participação social e de planejamento, de caráter consultivo e deliberativo, compostos por representantes de organizações territoriais formais e informais. Têm como responsabilidade articular, propor, acompanhar e avaliar políticas e ações voltadas ao desenvolvimento territorial sustentável.</p>
+<p>Constituem espaços de diálogo e articulação, onde se coordenam e monitoram políticas públicas voltadas ao fortalecimento da agricultura familiar e de outros grupos sociais em situação de vulnerabilidade, promovendo inclusão social e gestão participativa. Uma tarefa central do Codeter consiste na elaboração ou atualização do Plano de Desenvolvimento Territorial Sustentável.</p>
+<div class="card card-blue">
+<div class="card-title">O que é o Plano de Desenvolvimento Territorial Sustentável?</div>
+<p>O Plano de Desenvolvimento Territorial Sustentável é um documento que orienta as ações em um território. Ele é feito pelo Codeter (Colegiado de Desenvolvimento Territorial) com a participação das pessoas que vivem no território.</p>
+<p>No plano, o grupo define:</p>
+<ul>
+<li>A visão de futuro para o território</li>
+<li>As prioridades de ação</li>
+<li>As estratégias para o desenvolvimento econômico, social, cultural e ambiental</li>
+</ul>
+<h4>Para que serve?</h4>
+<p>O plano ajuda a orientar, apoiar e organizar a implantação de políticas públicas, programas e projetos que promovam o desenvolvimento sustentável nos territórios.</p>
+<h4>Como deve ser feito?</h4>
+<p>A elaboração do plano precisa ser participativa. Isso significa que todos os atores locais devem ter a chance de contribuir. Mas o processo também precisa ser organizado para garantir eficiência e agilidade.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">7</div></div>
+</div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="card card-blue">
+<div class="card-title">Plano de Desenvolvimento Territorial Sustentável <span style="font-size:9pt;color:#999">(continuação)</span></div>
+<h4>Orientações para complementar este documento</h4>
+<p>Depois que o território for homologado pelo Condraf, este documento servirá de base para a construção do Plano de Desenvolvimento Territorial Sustentável. Para deixá-lo mais completo, recomendamos incluir as informações abaixo.</p>
+<p><strong>1. Territorialização de políticas públicas</strong></p>
+<p>Com a ajuda da Plataforma Territórios da Cidadania - Sistema de Informações Territoriais (SIT), disponível em https://territoriosrurais.org/, é possível fazer um levantamento sobre como as políticas públicas chegam ao território.</p>
+<p>O que priorizar neste documento:</p>
+<ul>
+<li>Número de Cadastros da Agricultura Familiar (CAF) no território</li>
+<li>Quantidade de contratos do Programa Nacional de Fortalecimento da Agricultura Familiar (Pronaf)</li>
+</ul>
+<p>Como analisar esses dados:</p>
+<ul>
+<li>Compare a situação do território com a do estado e do país</li>
+<li>Identifique quais municípios do território estão com resultados abaixo do potencial</li>
+</ul>
+<p>Essa análise também pode ser feita com outras políticas públicas. O objetivo é entender onde é preciso melhorar o acesso da população a essas políticas.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">8</div></div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="card card-blue">
+<div class="card-title">Orientações para complementar este documento <span style="font-size:9pt;color:#999">(continuação)</span></div>
+<p><strong>2. Ações em andamento e potencialidades do território</strong></p>
+<p>Para aprofundar o diagnóstico e abrir novas possibilidades para o Plano, sugerimos incluir um tópico sobre:</p>
+<ul>
+<li>Ações que já estão acontecendo no território</li>
+<li>Potenciais locais que podem ser mais valorizados</li>
+</ul>
+<p>Se fizer sentido para a realidade local, vocês podem usar a abordagem da Cesta de Bens e Serviços Territoriais (CBST). Isso significa olhar para o território de forma integrada, considerando diferentes recursos e iniciativas, como:</p>
+<ul>
+<li>Agroindústrias familiares</li>
+<li>Marcas coletivas</li>
+<li>Indicações Geográficas (produtos típicos da região)</li>
+<li>Paisagens e belezas naturais</li>
+<li>Turismo de base comunitária</li>
+<li>Festas e eventos tradicionais</li>
+<li>Práticas agroecológicas</li>
+<li>Canais de comercialização que valorizam a produção local</li>
+<li>Participação efetiva de Povos e Comunidades Tradicionais</li>
+<li>Relações entre a cidade e o campo que fortalecem o desenvolvimento sustentável</li>
+</ul>
+<p><strong>Resumo:</strong> Quanto mais informações de qualidade o território reunir, melhor será o Plano. E quanto mais pessoas participarem da construção, mais o plano vai representar a realidade e as prioridades de quem vive no território.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">9</div></div>
+</div>
+
+<!-- INTRODUÇÃO p4 - Critérios -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Critérios obrigatórios para a composição dos Codeter</h3>
+<p>A composição dos Colegiados deve observar as seguintes diretrizes para garantir participação social, pluralidade e governança:</p>
+<ol>
+<li>Mínimo de 50% de representantes da sociedade civil, incluindo organizações formais e grupos informais.</li>
+<li>Máximo de 50% de representantes governamentais.</li>
+<li>Mínimo de 50% de mulheres entre os representantes da sociedade civil.</li>
+<li>Mínimo de 50% de mulheres entre os representantes do poder público.</li>
+<li>Buscar a participação mínima de 20% de jovens, em consonância com o Estatuto da Juventude e com o Plano Nacional de Juventude e Sucessão Rural.</li>
+<li>Incluir representantes que expressem a diversidade de orientações sexuais e identidade de gênero do território, garantindo espaço para pessoas LGBTQIA+.</li>
+<li>Promover a representação de Povos Indígenas, Povo Negro, Povos Quilombolas e Povos e Comunidades Tradicionais (PCTs) em, no mínimo, 30%, com atenção à paridade de gênero.</li>
+<li>Estimular a participação de pessoas idosas, com atenção à paridade de gênero, buscando progressivamente cerca de 20% de representantes, em consonância com o Estatuto da Pessoa Idosa.</li>
+<li>Incluir representação das cidades de médio e grande porte no território, quando houver.</li>
+</ol>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">10</div></div>
+</div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Critérios obrigatórios <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<ol start="10">
+<li>Incluir representação de segmentos não diretamente ligados à produção rural (trabalhadores assalariados, coletivos culturais, organizações de consumidores etc.).</li>
+<li>Constituir, no mínimo, 3 (três) Comitês Temáticos Permanentes, de caráter consultivo, dentre os seguintes temas:</li>
+</ol>
+<p style="padding-left:5mm">a) Mulheres;<br>b) Juventude Rural e/ou Sucessão Rural;<br>c) Territorialidade e Direitos dos Povos e Comunidades Tradicionais;<br>d) Arte, Cultura e Educação Popular;<br>e) Acesso à Assistência Técnica e Extensão Rural (ATER);<br>f) Abastecimento, Acesso a Mercados e Segurança e Soberania Alimentar;<br>g) Acesso à Terra e Regularização Fundiária;<br>h) Formas Socialmente Justas de Geração de Energia Limpa e/ou Impactos da Implantação de Energias Renováveis;<br>i) Acesso a outras políticas públicas;<br>j) Acompanhamento dos Projetos;<br>l) Crédito e Financiamento à Agricultura Familiar;<br>m) Agroecologia;<br>n) Economia Solidária.</p>
+<div class="card card-yellow">
+<div class="card-title">Importante</div>
+<p>Raça/cor, gênero, identidade de gênero, orientação sexual e pertencimento a Povos e Comunidades Tradicionais devem ser informados por autodeclaração.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">11</div></div>
+</div>
+
+<!-- INTRODUÇÃO p5 - Condraf -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>E o Condraf, o que é e por que ele importa?</h3>
+<p>O Conselho Nacional de Desenvolvimento Rural Sustentável (Condraf) é um órgão colegiado com a finalidade de propor diretrizes para a formulação e a implementação de políticas públicas estruturantes destinadas ao desenvolvimento rural sustentável, à reforma agrária, à agricultura familiar e ao abastecimento alimentar.</p>
+<h3>O que o Condraf faz neste processo?</h3>
+<p>É no Condraf que os processos de revalidação, homologação e reconfiguração dos Territórios da Cidadania são avaliados e deliberados. Para isso, o Conselho tem competência para, entre outras atribuições:</p>
+<ul>
+<li>Pactuar e aprovar as diretrizes territoriais.</li>
+<li>Definir os procedimentos para reconhecimento dos territórios.</li>
+<li>Apreciar e decidir sobre as solicitações dos territórios.</li>
+</ul>
+<h3>Quem faz parte do Condraf?</h3>
+<p>O Condraf é formado por representantes do governo federal e representantes da sociedade civil organizada, obedecendo, na sua composição, à paridade de gênero, quando não houver maioria de representantes mulheres e o percentual de, no mínimo, 30% de pessoas autodeclaradas pretas, pardas ou indígenas.</p>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">12</div></div>
+</div>
+
+<!-- SEÇÃO 1 - REVALIDAÇÃO -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="section-bar"><span class="section-num">1</span><h2>Revalidação da Homologação de Territórios</h2></div>
+
+<span class="badge badge-blue">O que é?</span>
+<p>Processo para territórios que já foram homologados pelo Condraf e irão manter o recorte territorial, sem inclusão ou exclusão de municípios.</p>
+
+<div class="card card-orange">
+<div class="card-title">ATENÇÃO</div>
+<p>Se houver inclusão ou exclusão de municípios, o procedimento a ser solicitado é o de reconfiguração do território, após aprovada a revalidação pelo Condraf.</p>
+</div>
+
+<span class="badge badge-green">Responsável pelo Processo</span>
+<ul>
+<li>Codeter, quando o colegiado estiver ativo;</li>
+<li>Coletivo Organizado, quando o Codeter não estiver ativo.</li>
+</ul>
+
+<div class="card card-blue">
+<div class="card-title">O que é o Coletivo Organizado?</div>
+<p>O Coletivo Organizado é um grupo formado por integrantes do Codeter vinculados até 2016 ao Programa Nacional de Desenvolvimento Sustentável de Territórios Rurais ou ao Programa Territórios da Cidadania, juntamente com pessoas do território interessadas em participar do processo de revalidação da homologação.</p>
+</div>
+
+<span class="badge badge-dark">Passo a Passo</span>
+
+<div class="step"><div class="step-n">1</div><div class="step-c">
+<h4>Verificar os requisitos</h4>
+<ul>
+<li>O território já foi homologado pelo Condraf?</li>
+<li>O território irá manter o recorte, sem modificações?</li>
+</ul>
+</div></div>
+
+<div class="step"><div class="step-n">2</div><div class="step-c">
+<h4>Reunir o Codeter (ou Coletivo Organizado) após ampla divulgação</h4>
+<ul>
+<li>Registrar em ata a aprovação da Declaração de Revalidação da Homologação do Território.</li>
+<li>Anexar à ata a Lista de presença e a Listagem atualizada das organizações que compõem o Codeter ou o Coletivo Organizado.</li>
+</ul>
+</div></div>
+
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">13</div></div>
+</div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Revalidação da Homologação <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="card card-green">
+<div class="card-title">Ampla divulgação — O que significa?</div>
+<p>Convocar a reunião com antecedência e usar mais de um canal de comunicação para que a informação chegue a todos.</p>
+<p><strong>Exemplos de canais:</strong></p>
+<ul>
+<li>Aplicativos de mensagem</li>
+<li>Cartazes em locais públicos</li>
+<li>Rádios locais</li>
+<li>Redes sociais</li>
+</ul>
+<p><strong>Quem deve ser informado:</strong></p>
+<ul>
+<li>Organizações da sociedade civil</li>
+<li>Comunidades</li>
+<li>Poder público do território</li>
+</ul>
+<p><strong>Por que isso é importante?</strong> A divulgação garante a transparência e a validade de todo o processo.</p>
+<p><strong>Registros que devem ser guardados (para anexar à ata):</strong></p>
+<ul>
+<li>E-mails enviados</li>
+<li>Convites entregues</li>
+<li>Prints de mensagens ou publicações</li>
+<li>Fotos de cartazes ou reuniões</li>
+<li>Links de divulgação</li>
+</ul>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">14</div></div>
+</div>
+
+<!-- REVALIDAÇÃO cont -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Revalidação da Homologação <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+
+<div class="step"><div class="step-n">3</div><div class="step-c">
+<h4>Enviar a documentação ao MDA</h4>
+<ul>
+<li>Ata da Reunião de Aprovação da Declaração de Revalidação.</li>
+<li>Declaração de Revalidação da Homologação do Território.</li>
+<li>Listagem atualizada das organizações que compõem o Codeter ou o Coletivo Organizado.</li>
+</ul>
+<p>E-mail: cgdt@mda.gov.br<br>Assunto do e-mail: Revalidação da homologação do Território [Nome do Território]</p>
+</div></div>
+
+<div class="step"><div class="step-n">4</div><div class="step-c">
+<h4>Dar ciência do pedido de revalidação</h4>
+<p>Enviar cópia do pedido:</p>
+<ul>
+<li>Aos conselhos, colegiados estaduais de desenvolvimento rural/territorial, ou equivalentes (quando houver).</li>
+<li>À Superintendência Federal do MDA no estado.</li>
+</ul>
+</div></div>
+
+<div class="step"><div class="step-n">5</div><div class="step-c">
+<h4>Após a revalidação aprovada pelo Condraf, é necessário:</h4>
+<p>a) Comunicar a reativação aos integrantes do Codeter vigente em 2016.<br>
+b) Promover reunião para reativação do Colegiado.<br>
+c) Atualizar o Regimento Interno do Codeter.<br>
+d) Definir a recomposição do Codeter conforme critérios obrigatórios de composição (ver página xx) e eleger o núcleo diretivo.</p>
+</div></div>
+
+<div class="div"></div>
+<span class="badge badge-orange">Análise e Prazos</span>
+<ul>
+<li><strong>Prazo e análise:</strong> O Condraf terá até 90 dias, ou até a reunião ordinária subsequente, para deliberar.</li>
+<li><strong>Critério de aprovação:</strong> Conformidade documental e manutenção do recorte territorial.</li>
+</ul>
+
+<span class="badge badge-blue">Resultados Possíveis</span>
+<div class="result-box">
+<div class="result-ok"><h4>Se aprovado:</h4><p>O Condraf emitirá resolução de revalidação.</p></div>
+<div class="result-no"><h4>Se não aprovado:</h4><p>A Secretaria-Executiva do Condraf justificará a decisão. O Codeter poderá recorrer, apresentar justificativas ou apontar inconsistências processuais.</p></div>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">15</div></div>
+</div>
+
+<!-- FLUXOGRAMA REVALIDAÇÃO -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3 style="text-align:center">Fluxograma do Passo a Passo da Revalidação da Homologação de Territórios</h3>
+<div class="flow">
+<div class="flow-box flow-blue">Passo 1: Verificar os requisitos<br><small>(Território homologado? Mantém recorte?)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-blue">Passo 2: Reunir o Codeter/Coletivo Organizado após ampla divulgação<br><small>(Ata, lista de presença, listagem de organizações)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-green">Passo 3: Enviar documentação ao MDA<br><small>(cgdt@mda.gov.br)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-blue">Passo 4: Dar ciência do pedido<br><small>(Colegiados estaduais + Superintendência MDA)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-orange">Análise pelo Condraf<br><small>(Até 90 dias ou reunião ordinária subsequente)</small></div>
+<div class="flow-arrow"></div>
+<div style="display:flex;gap:4mm;width:85%">
+<div class="flow-box flow-green" style="flex:1">Aprovado<br><small>Resolução de revalidação</small></div>
+<div class="flow-box flow-orange" style="flex:1">Não aprovado<br><small>Justificativa + possibilidade de recurso</small></div>
+</div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-blue">Passo 5: Após aprovação — Reativar Codeter, atualizar Regimento, eleger núcleo diretivo</div>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">16</div></div>
+</div>
+
+<!-- SEÇÃO 2 - HOMOLOGAÇÃO NOVOS p1 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="section-bar"><span class="section-num">2</span><h2>Homologação de Novos Territórios</h2></div>
+
+<span class="badge badge-blue">O que é?</span>
+<p>Processo para criar e reconhecer oficialmente um novo território no âmbito do Programa Nacional de Desenvolvimento Territorial Sustentável (Territórios da Cidadania).</p>
+
+<span class="badge badge-green">Responsável pelo Processo</span>
+<p>Comissão de Implantação: grupo formado por representantes das organizações e dos municípios envolvidos, responsável por realizar as reuniões, elaborar os documentos e conduzir o pedido de homologação do território.</p>
+
+<div class="card card-blue">
+<div class="card-title">Como é formada a Comissão de Implantação?</div>
+<p>A Comissão de Implantação deve ser constituída considerando o contexto específico de cada estado e território. Sempre que possível, recomenda-se que seja instituída de forma compartilhada entre:</p>
+<ul>
+<li>A Superintendência Federal do MDA no Estado</li>
+<li>Articuladores(as) Territoriais</li>
+<li>Representantes da Rede Nacional de Colegiados Territoriais</li>
+<li>Agentes de Desenvolvimento Territorial Sustentável</li>
+</ul>
+</div>
+
+<div class="card card-green">
+<div class="card-title">O que é a Rede Nacional de Colegiados Territoriais?</div>
+<p>A Rede Nacional de Colegiados Territoriais (RNCT) é um espaço de articulação entre os Codeter de todo o país.</p>
+<p><strong>Para que serve?</strong></p>
+<ul>
+<li>Fortalece a participação social na política territorial</li>
+<li>Promove a troca de experiências entre os territórios</li>
+<li>Apoia a qualificação da gestão dos colegiados</li>
+<li>Ajuda os Codeter a participar de debates nacionais, inclusive nas discussões do Condraf</li>
+</ul>
+<p>Na prática, a RNCT funciona como uma grande rede de cooperação. Os colegiados se conectam, compartilham o que dá certo e se fortalecem juntos.</p>
+</div>
+
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">17</div></div>
+</div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Homologação de Novos Territórios <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<span class="badge badge-dark">Passo a Passo</span>
+
+<div class="step"><div class="step-n">1</div><div class="step-c">
+<h4>Formalizar a Comissão de Implantação</h4>
+<ul>
+<li>Formar a Comissão de Implantação composta por representantes de órgãos públicos dos municípios e das organizações da sociedade civil.</li>
+<li>Elaborar o Documento de Constituição da Comissão de Implantação.</li>
+<li>Definir responsáveis e, se necessário, instituir Grupos de Trabalho (GT) para apoiar a elaboração dos documentos.</li>
+</ul>
+</div></div>
+
+<div class="card card-blue" style="margin-left:12mm">
+<p>Na reunião para formar a Comissão de Implantação, recomenda-se instituir os GT, registrados em ata, com a tarefa de elaborar:</p>
+<ul>
+<li>Um documento com argumentos que justifiquem a criação do território.</li>
+<li>O Regimento Interno do Codeter.</li>
+</ul>
+<p>Nos estados que contam com Agentes de Desenvolvimento Territorial Sustentável, esses profissionais devem integrar os GT juntamente com representantes das organizações territoriais.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">18</div></div>
+</div>
+
+<!-- HOMOLOGAÇÃO NOVOS p2 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Homologação de Novos Territórios <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+
+<div class="step"><div class="step-n">2</div><div class="step-c">
+<h4>Realizar assembleias ou fóruns municipais</h4>
+<ul>
+<li>Identificar os municípios em que o Conselho Municipal de Desenvolvimento Rural (CMDR) possa, em conjunto com a Comissão de Implantação, convocar assembleias ou fóruns municipais.</li>
+</ul>
+<div class="card card-orange" style="margin-top:2mm">
+<div class="card-title">ATENÇÃO</div>
+<p>Quando o CMDR estiver inoperante ou não demonstrar interesse pelo tema, a Comissão de Implantação deve convocar fóruns municipais, que integrarão o território, garantindo ampla divulgação e participação.</p>
+</div>
+<ul>
+<li>Realizar assembleias ou fóruns municipais em todos os municípios que pretendem compor o território, de forma presencial ou virtual, garantindo a participação do poder público, da sociedade civil e de Povos e Comunidades Tradicionais, com atenção especial à participação de mulheres e jovens.</li>
+</ul>
+<div class="card card-blue" style="margin-top:2mm">
+<div class="card-title">Para fortalecer a publicidade e a participação, recomenda-se:</div>
+<ul>
+<li>Criar um canal mínimo de comunicação do processo (ex.: e-mail institucional e conta em rede social).</li>
+<li>Enviar convites por e-mail para organizações locais, incluindo CMDR e prefeituras.</li>
+<li>Quando não houver e-mail do CMDR, encaminhar convites à Secretaria Municipal de Agricultura e ao Gabinete da Prefeitura.</li>
+<li>Guardar evidências de divulgação (prints, fotos, links, convites e e-mails) para anexar à ata.</li>
+</ul>
+</div>
+</div></div>
+
+<div class="step"><div class="step-n">3</div><div class="step-c">
+<h4>Preparar a justificativa para criação do território</h4>
+<p>Elaborar um documento que apresente os argumentos para a criação do território, contemplando os seguintes aspectos:</p>
+<ul>
+<li>Histórico</li><li>Cultural</li><li>Geoambiental</li><li>Político-institucional</li><li>Econômico</li><li>Mobilidade</li><li>Educacional</li>
+</ul>
+</div></div>
+
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">19</div></div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Homologação de Novos Territórios <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="card card-green">
+<p>A Plataforma Territórios da Cidadania (https://territoriosrurais.org/) disponibiliza informações e características territoriais. Além disso, o SIT funciona como uma biblioteca da política, reunindo atos normativos, mapas e planos de desenvolvimento territorial, bem como o registro das principais atividades desenvolvidas pelos Colegiados Territoriais.</p>
+</div>
+
+<div class="step"><div class="step-n">4</div><div class="step-c">
+<h4>Elaborar a proposta de Regimento Interno do Codeter</h4>
+</div></div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">20</div></div>
+</div>
+
+<!-- HOMOLOGAÇÃO NOVOS p3 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Homologação de Novos Territórios <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+
+<div class="step"><div class="step-n">5</div><div class="step-c">
+<h4>Convocar e realizar a reunião deliberativa sobre a criação do território</h4>
+<ul>
+<li>Divulgar amplamente a reunião com antecedência mínima de 15 dias.</li>
+<li>Assegurar a representatividade dos municípios interessados, garantindo a participação mínima de 50% de membros da sociedade civil.</li>
+<li>Manter a reunião aberta à participação dos representantes municipais indicados para compor o Codeter.</li>
+<li>Garantir a participação de mulheres e a inclusão de Povos e Comunidades Tradicionais, observando os critérios de composição vigentes.</li>
+<li>Incluir, na pauta:
+<ul>
+<li>Relato das ações realizadas para a criação do território, com síntese das assembleias ou fóruns municipais.</li>
+<li>Discussão e aprovação do Documento de Justificativa para a Criação do Território e do Regimento Interno do Codeter.</li>
+<li>Votação sobre a criação do território.</li>
+</ul></li>
+</ul>
+</div></div>
+
+<div class="step"><div class="step-n">6</div><div class="step-c">
+<h4>Reunir e encaminhar a documentação ao MDA</h4>
+<ul>
+<li>Documento de Constituição da Comissão de Implantação</li>
+<li>Documento de Justificativa para a Criação do Território</li>
+<li>Regimento Interno do Codeter</li>
+<li>Ata da Reunião Deliberativa sobre a Criação do Território</li>
+<li>Atas das Assembleias ou Fóruns Municipais – uma por município</li>
+<li>Ofício de Solicitação da Homologação de Novo Território</li>
+</ul>
+<p>E-mail: cgdt@mda.gov.br<br>Assunto do e-mail: Homologação de novo território – [Nome do Território]</p>
+</div></div>
+
+<div class="step"><div class="step-n">7</div><div class="step-c">
+<h4>Dar ciência do pedido</h4>
+<p>Informar oficialmente o envio do pedido de homologação:</p>
+<ul>
+<li>À Superintendência Federal do MDA no estado.</li>
+<li>Aos conselhos ou colegiados estaduais de desenvolvimento rural/territorial, ou equivalentes (quando houver).</li>
+</ul>
+</div></div>
+
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">21</div></div>
+</div>
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Homologação de Novos Territórios <span style="font-size:9pt;color:#999">(resultados)</span></h3>
+<div class="div"></div>
+<span class="badge badge-orange">Análise e Prazos</span>
+<ul>
+<li><strong>Prazo de análise:</strong> O Condraf terá até 90 dias, ou até a reunião ordinária subsequente, para deliberar.</li>
+<li><strong>Critério de aprovação:</strong> Coerência argumentativa que indique sentido territorial e conformidade documental.</li>
+</ul>
+
+<span class="badge badge-blue">Resultados Possíveis</span>
+<div class="result-box">
+<div class="result-ok"><h4>Se aprovado:</h4><p>O Condraf emitirá resolução de homologação.</p></div>
+<div class="result-no"><h4>Se não aprovado imediatamente:</h4><p>A Secretaria-Executiva do Condraf justificará a decisão. O Codeter poderá recorrer, apresentar justificativas ou apontar inconsistências processuais.</p></div>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">22</div></div>
+</div>
+</div>
+
+<!-- FLUXOGRAMA HOMOLOGAÇÃO NOVOS -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3 style="text-align:center">Fluxograma Passo a Passo da Homologação de Novos Territórios</h3>
+<div class="flow">
+<div class="flow-box flow-blue">Passo 1: Formalizar a Comissão de Implantação<br><small>(Documento de Constituição, GTs)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-blue">Passo 2: Realizar assembleias ou fóruns municipais<br><small>(Em todos os municípios, com participação diversa)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-blue">Passo 3: Preparar a justificativa para criação do território<br><small>(Histórico, Cultural, Geoambiental, Político-institucional, Econômico, Mobilidade, Educacional)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-blue">Passo 4: Elaborar proposta de Regimento Interno do Codeter</div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-green">Passo 5: Convocar e realizar a reunião deliberativa<br><small>(Antecedência mínima de 15 dias, votação sobre criação)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-green">Passo 6: Reunir e encaminhar documentação ao MDA<br><small>(cgdt@mda.gov.br)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-blue">Passo 7: Dar ciência do pedido<br><small>(Superintendência MDA + colegiados estaduais)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-orange">Análise pelo Condraf (até 90 dias)</div>
+<div class="flow-arrow"></div>
+<div style="display:flex;gap:4mm;width:85%">
+<div class="flow-box flow-green" style="flex:1">Aprovado — Resolução de homologação</div>
+<div class="flow-box flow-orange" style="flex:1">Não aprovado — Recurso possível</div>
+</div>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">23</div></div>
+</div>
+
+<!-- SEÇÃO 3 - HOMOLOGAÇÃO ESTADUAL -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="section-bar"><span class="section-num">3</span><h2>Homologação de Territórios já Instituídos pelos Governos Estaduais</h2></div>
+
+<span class="badge badge-blue">O que é?</span>
+<p>Processo para homologar em âmbito federal territórios que já foram instituídos e homologados pelos respectivos governos estaduais.</p>
+
+<span class="badge badge-green">Responsável pelo Processo</span>
+<p>Codeter dos territórios já instituídos/homologado pelos governos estaduais.</p>
+
+<span class="badge badge-dark">Passo a Passo</span>
+
+<div class="step"><div class="step-n">1</div><div class="step-c">
+<h4>Deliberar sobre o pedido de homologação federal</h4>
+<ul>
+<li>Realizar reunião do Codeter para deliberar sobre o pedido de homologação do território em âmbito federal.</li>
+<li>Registrar a decisão em ata.</li>
+</ul>
+</div></div>
+
+<div class="step"><div class="step-n">2</div><div class="step-c">
+<h4>Reunir e encaminhar a documentação ao MDA</h4>
+<ul>
+<li>Declaração de Homologação de Território pelo Governo Estadual</li>
+<li>Ata da Reunião do Codeter de Aprovação do Pedido de Homologação pelo Governo Federal</li>
+<li>Listagem atualizada das organizações que compõem o Codeter</li>
+<li>Regimento Interno do Codeter</li>
+<li>Documentação estadual de instituição/homologação do território</li>
+</ul>
+<p>E-mail: cgdt@mda.gov.br<br>Assunto do e-mail: Homologação de território já instituído pelo governo estadual – [Nome do Território]</p>
+</div></div>
+
+<div class="step"><div class="step-n">3</div><div class="step-c">
+<h4>Dar ciência do pedido</h4>
+<p>Informar oficialmente o envio do pedido de homologação:</p>
+<ul>
+<li>À Superintendência Federal do MDA no estado.</li>
+<li>Aos conselhos ou colegiados estaduais de desenvolvimento rural/territorial, ou equivalentes (quando houver).</li>
+</ul>
+</div></div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">24</div></div>
+</div>
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Homologação Estadual <span style="font-size:9pt;color:#999">(resultados)</span></h3>
+<div class="div"></div>
+<span class="badge badge-orange">Análise e Prazos</span>
+<ul>
+<li><strong>Prazo de análise:</strong> O Condraf terá até 90 dias, ou até a reunião ordinária subsequente, para deliberar.</li>
+<li><strong>Critério de aprovação:</strong> Coerência argumentativa que indique sentido territorial e conformidade documental.</li>
+</ul>
+
+<span class="badge badge-blue">Resultados Possíveis</span>
+<div class="result-box">
+<div class="result-ok"><h4>Se aprovado:</h4><p>O Condraf emitirá resolução de homologação.</p></div>
+<div class="result-no"><h4>Se não aprovado imediatamente:</h4><p>A Secretaria-Executiva do Condraf justificará a decisão. O Codeter poderá recorrer, apresentar justificativas ou apontar inconsistências processuais.</p></div>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">25</div></div>
+</div>
+</div>
+
+<!-- FLUXOGRAMA HOMOLOGAÇÃO ESTADUAL -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3 style="text-align:center">Fluxograma do Passo a Passo da Homologação de Territórios já Instituídos pelos Governos Estaduais</h3>
+<div class="flow">
+<div class="flow-box flow-blue">Passo 1: Deliberar sobre o pedido de homologação federal<br><small>(Reunião do Codeter, decisão em ata)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-green">Passo 2: Reunir e encaminhar documentação ao MDA<br><small>(Declaração estadual, Ata, Listagem, Regimento, Documentação estadual)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-blue">Passo 3: Dar ciência do pedido<br><small>(Superintendência MDA + colegiados estaduais)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-orange">Análise pelo Condraf (até 90 dias)</div>
+<div class="flow-arrow"></div>
+<div style="display:flex;gap:4mm;width:85%">
+<div class="flow-box flow-green" style="flex:1">Aprovado — Resolução de homologação</div>
+<div class="flow-box flow-orange" style="flex:1">Não aprovado — Recurso possível</div>
+</div>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">26</div></div>
+</div>
+
+<!-- SEÇÃO 4 - RECONFIGURAÇÃO -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="section-bar"><span class="section-num">4</span><h2>Reconfiguração de Territórios</h2></div>
+
+<span class="badge badge-blue">O que é?</span>
+<p>Procedimento utilizado para atualizar territórios já homologados, nas seguintes modalidades:</p>
+<ol>
+<li>Alterar a toponímia (nome);</li>
+<li>Alterar limites, incluindo ou excluindo município(s);</li>
+<li>Revelar novo(s) território(s), por reagrupamento de municípios;</li>
+<li>Suprimir território(s), com incorporação de seus municípios a outro(s) território(s).</li>
+</ol>
+
+<span class="badge badge-green">Responsável pelo Processo</span>
+<p>Codeter do território a ser reconfigurado.</p>
+
+<span class="badge badge-dark">Passo a Passo</span>
+
+<div class="step"><div class="step-n">1</div><div class="step-c">
+<h4>Preparar a justificativa</h4>
+<p>Elaborar um documento explicando os motivos e a modalidade de reconfiguração, descrevendo:</p>
+<ul>
+<li>o que muda (nome, limites, reagrupamento ou incorporação);</li>
+<li>quais municípios são afetados;</li>
+<li>as razões que fundamentam a proposta (sociais, econômicas, culturais, ambientais e institucionais);</li>
+<li>os resultados esperados para a organização territorial e para a gestão do território.</li>
+</ul>
+</div></div>
+
+<div class="step"><div class="step-n">2</div><div class="step-c">
+<h4>Realizar assembleias ou fóruns municipais (quando houver município sem vínculo territorial anterior)</h4>
+<p>Para municípios que não integravam um território homologado, realizar assembleia ou fórum municipal, com:</p>
+<ul>
+<li>Convocação preferencial pelo Conselho Municipal de Desenvolvimento Rural, quando existir;</li>
+<li>Participação mínima de 50% de representantes da sociedade civil;</li>
+<li>Participação do poder público, incluindo a Prefeitura;</li>
+<li>Ampla divulgação e diversidade social e de organizações;</li>
+<li>Ata aprovando o ingresso do município no território.</li>
+</ul>
+</div></div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">27</div></div>
+</div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Reconfiguração de Territórios <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+
+<div class="step"><div class="step-n">3</div><div class="step-c">
+<h4>Reunir e encaminhar a documentação ao MDA</h4>
+<ul>
+<li>Documento de Justificativa da Reconfiguração do Território</li>
+<li>Atas das Assembleias ou Fóruns Municipais</li>
+<li>Ofício de Solicitação da Reconfiguração do Território</li>
+<li>Ata da Reunião do Codeter com Manifestação Favorável à Reconfiguração do Território</li>
+</ul>
+<p>E-mail: cgdt@mda.gov.br<br>Assunto do e-mail: Reconfiguração de território – [Nome do Território]</p>
+</div></div>
+
+<div class="step"><div class="step-n">4</div><div class="step-c">
+<h4>Dar ciência do pedido</h4>
+<p>Informar oficialmente o envio do pedido de homologação:</p>
+<ul>
+<li>À Superintendência Federal do MDA no estado.</li>
+<li>Aos conselhos ou colegiados estaduais de desenvolvimento rural/territorial, ou equivalentes (quando houver).</li>
+</ul>
+</div></div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">28</div></div>
+</div>
+
+<!-- RECONFIGURAÇÃO cont + REFERÊNCIAS -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Reconfiguração de Territórios <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+
+<div class="card card-blue">
+<div class="card-title">Compatibilização com o planejamento estadual</div>
+<p>Para fortalecer a integração entre políticas públicas e a articulação federativa, recomenda-se que os recortes territoriais homologados coincidam, sempre que possível, com aqueles definidos pela secretaria estadual de planejamento ou por órgão equivalente responsável pelo planejamento estadual.</p>
+<p>Quando forem identificadas dificuldades técnicas ou conceituais para essa compatibilização, o Condraf poderá acionar sua instância competente para analisar a proposta. Isso facilitará o diálogo com o governo estadual, considerando as exposições de motivos apresentadas pelo Codeter, pela Superintendência Federal do MDA no estado e pelos conselhos ou colegiados estaduais de desenvolvimento rural/territorial, ou equivalentes, quando houver.</p>
+</div>
+
+<span class="badge badge-orange">Análise e Prazos</span>
+<ul>
+<li><strong>Prazo de análise:</strong> O Condraf terá até 90 dias, ou até a reunião ordinária subsequente, para deliberar.</li>
+<li><strong>Critério de aprovação:</strong> Coerência argumentativa que indique sentido territorial e conformidade documental.</li>
+</ul>
+
+<span class="badge badge-blue">Resultados Possíveis</span>
+<div class="result-box">
+<div class="result-ok"><h4>Se aprovado:</h4><p>O Condraf emitirá resolução de reconfiguração.</p></div>
+<div class="result-no"><h4>Se não aprovado imediatamente:</h4><p>A Secretaria-Executiva do Condraf justificará a decisão. O Codeter poderá recorrer, apresentar justificativas ou apontar inconsistências processuais.</p></div>
+</div>
+
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">29</div></div>
+</div>
+
+<!-- FLUXOGRAMA RECONFIGURAÇÃO -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3 style="text-align:center">Fluxograma do Passo a Passo da Reconfiguração de Territórios</h3>
+<div class="flow">
+<div class="flow-box flow-blue">Passo 1: Preparar a justificativa<br><small>(Motivos, modalidade, municípios afetados, razões, resultados esperados)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-blue">Passo 2: Realizar assembleias ou fóruns municipais<br><small>(Quando houver município sem vínculo territorial anterior)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-green">Passo 3: Reunir e encaminhar documentação ao MDA<br><small>(Justificativa, Atas, Ofício, Ata do Codeter)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-blue">Passo 4: Dar ciência do pedido<br><small>(Superintendência MDA + colegiados estaduais)</small></div>
+<div class="flow-arrow"></div>
+<div class="flow-box flow-orange">Análise pelo Condraf (até 90 dias)</div>
+<div class="flow-arrow"></div>
+<div style="display:flex;gap:4mm;width:85%">
+<div class="flow-box flow-green" style="flex:1">Aprovado — Resolução de reconfiguração</div>
+<div class="flow-box flow-orange" style="flex:1">Não aprovado — Recurso possível</div>
+</div>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">30</div></div>
+</div>
+
+<!-- REFERÊNCIAS -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h2>Referências</h2>
+<div class="ref">Decreto nº 11.451, de 22 de março de 2023. Institui o Conselho Nacional de Desenvolvimento Rural Sustentável – Condraf.</div>
+<div class="ref">Resolução Condraf nº 1, de 23 de outubro de 2023. Aprova o Regimento Interno do Conselho Nacional de Desenvolvimento Rural Sustentável – Condraf.</div>
+<div class="ref">Resolução Condraf nº 16, de 10 de junho de 2024 (com as alterações da Resolução Condraf nº 40/2025). Dispõe sobre a homologação de territórios e estabelece critérios para a composição dos Colegiados Territoriais no âmbito do Programa Nacional de Desenvolvimento Territorial Sustentável. <em style="color:var(--laranja)">[Incluir link da versão consolidada e publicada no SIT]</em></div>
+<div class="ref">Resolução Condraf nº 40, de 19 de dezembro de 2025. Altera a Resolução nº 16, de 10 de junho de 2024.</div>
+<div class="ref">Portaria MDA nº 35, de 15 de setembro de 2025. Institui o Programa Nacional de Desenvolvimento Territorial Sustentável – PNDTS e dá outras providências.</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">31</div></div>
+</div>
+
+<!-- MODELOS - ÍNDICE -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h2>Modelos de Documentos</h2>
+<p>Para apoiar os territórios nos processos de homologação, revalidação ou reconfiguração, este Guia traz modelos de documentos que seguem os critérios das Resoluções Condraf nº 16/2024 e nº 40/2025.</p>
+<p>Os arquivos editáveis estão disponíveis na página da Plataforma Territórios da Cidadania - Sistema de Informações Territoriais (SIT):</p>
+<p><em>[link a ser inserido]</em></p>
+<h3>Lista de Documentos:</h3>
+<table>
+<thead><tr><th>Nº</th><th>Documento</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Ata da Reunião de Aprovação da Declaração de Revalidação</td></tr>
+<tr><td>2</td><td>Declaração de Revalidação da Homologação do Território</td></tr>
+<tr><td>3</td><td>Documento de Constituição da Comissão de Implantação</td></tr>
+<tr><td>4</td><td>Documento de Justificativa para a Criação do Território</td></tr>
+<tr><td>5</td><td>Regimento Interno do Codeter</td></tr>
+<tr><td>6</td><td>Ata da Reunião Deliberativa sobre a Criação do Território</td></tr>
+<tr><td>7</td><td>Ata da Assembleia ou Fórum Municipal</td></tr>
+<tr><td>8</td><td>Ofício de Solicitação da Homologação de Novo Território</td></tr>
+<tr><td>9</td><td>Declaração de Homologação de Território pelo Governo Estadual</td></tr>
+<tr><td>10</td><td>Ata da Reunião do Codeter de Aprovação do Pedido de Homologação pelo Governo Federal</td></tr>
+<tr><td>11</td><td>Ofício de Solicitação da Reconfiguração do Território</td></tr>
+<tr><td>12</td><td>Ata da Reunião do Codeter com Manifestação Favorável à Reconfiguração do Território</td></tr>
+</tbody>
+</table>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">32</div></div>
+</div>
+
+<!-- MODELO 1 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="modelo-h"><h3>Modelo 1 - Ata da Reunião de Aprovação da Declaração de Revalidação</h3></div>
+<div class="modelo-b">
+<p style="text-align:center;font-weight:700">ATA Nº <span class="campo">___/ANO</span> - REUNIÃO <span class="campo">[ORDINÁRIA/EXTRAORDINÁRIA]</span> DO <span class="campo">[CODETER/COLETIVO ORGANIZADO]</span> DO TERRITÓRIO <span class="campo">[NOME]</span></p>
+<p style="text-align:center">Revalidação da Homologação do Território <span class="campo">[Nome do Território]</span></p>
+<p><strong>Data:</strong> <span class="campo">[dia] de [mês] de [ano]</span><br><strong>Horário:</strong> <span class="campo">[hora de início]</span> às <span class="campo">[hora de término]</span><br><strong>Local:</strong> <span class="campo">[endereço completo, município – UF]</span></p>
+<h4>1. Convocação e Publicidade</h4>
+<p>A reunião foi convocada com a devida antecedência e amplamente divulgada nos meios locais, assegurando a participação de representantes do poder público e da sociedade civil, em atendimento aos princípios de transparência e participação social que orientam este <span class="campo">[Colegiado/Coletivo Organizado]</span>.</p>
+<h4>2. Abertura e Verificação de Quórum e Paridade</h4>
+<p>Sob a coordenação de <span class="campo">[Nome da Coordenação]</span>, foi aberta a reunião, após a verificação do quórum legal e do cumprimento dos critérios de participação social e paridade de gênero, em conformidade com a Resolução Condraf nº 16, de 10 de junho de 2024 (com as alterações da Resolução Condraf nº 40/2025).</p>
+<h4>3. Ordem do Dia</h4>
+<ul>
+<li>Apresentação e discussão da Declaração de Revalidação da Homologação do Território <span class="campo">[Nome do Território]</span>;</li>
+<li>Aprovação da Listagem atualizada das organizações que compõem o Codeter ou o Coletivo Organizado;</li>
+<li>Deliberação sobre os encaminhamentos para envio à SFDT/MDA, bem como para ciência dos conselhos ou colegiados estaduais de desenvolvimento rural/territorial, ou equivalentes (quando houver), e da Superintendência Federal do MDA no estado.</li>
+</ul>
+<h4>4. Deliberações</h4>
+<p>Após discussão, o plenário APROVOU:</p>
+<p>a) A Declaração de Revalidação da Homologação do Território <span class="campo">[Nome do Território]</span>;<br>b) A Listagem atualizada das organizações que compõem o Codeter ou o Coletivo Organizado;<br>c) O encaminhamento desta Ata e da Declaração de Revalidação aos órgãos competentes.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">33</div></div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 1 - Ata da Reunião <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b">
+<h4>5. Encaminhamentos e Prazos</h4>
+<p>O ofício de encaminhamento, acompanhado da documentação exigida, será protocolado até <span class="campo">[data]</span>.</p>
+<h4>6. Encerramento</h4>
+<p>Nada mais havendo a tratar, foi encerrada a reunião, da qual se lavrou a presente ata que, após lida e aprovada, será assinada por mim, <span class="campo">[Nome do Secretário(a)]</span>, e pelos demais presentes.</p>
+<p><strong>ASSINATURAS</strong></p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">Nome do(a) Coordenador(a)</span> - Coordenação</p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">Nome do(a) Secretário(a)</span> - Secretaria</p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">Nome do(a) Representante</span> – Sociedade Civil</p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">Nome do(a) Representante</span> – Poder Público</p>
+<p style="font-size:9pt">(Adicionar linhas conforme necessário)</p>
+<p><strong>ANEXOS</strong></p>
+<ul><li>Listagem atualizada de organizações que compõem o Codeter</li><li>Declaração de Revalidação da Homologação do Território</li><li>Lista de presença</li><li>Comprovantes da ampla divulgação da convocação</li></ul>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">34</div></div>
+</div>
+
+<!-- MODELO 2 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="modelo-h"><h3>Modelo 2 - Declaração de Revalidação da Homologação do Território</h3></div>
+<div class="modelo-b">
+<h4>1. Identificação do Território</h4>
+<p><strong>Nome do Território:</strong> <span class="campo">[Nome]</span><br><strong>Municípios que compõem o Território:</strong> <span class="campo">[Listar municípios (com código IBGE, se possível)]</span></p>
+<h4>2. Composição do Codeter</h4>
+<p><strong>Organizações que compõem atualmente o Codeter:</strong> <span class="campo">[Lista nominativa das organizações, discriminando representantes da sociedade civil e do poder público]</span></p>
+<h4>3. Registro de Atividades</h4>
+<p><strong>Data das últimas 5 (cinco) reuniões ordinárias do Codeter:</strong> <span class="campo">[DD/MM/AAAA; DD/MM/AAAA; DD/MM/AAAA; DD/MM/AAAA; DD/MM/AAAA]</span></p>
+<h4>4. Declaração</h4>
+<p>Este Codeter, reunido na data de <span class="campo">[data]</span>, confirma o interesse em revalidar a homologação do Território <span class="campo">[Nome do Território]</span>, conforme o art. 1 da Resolução do Condraf nº 16, de 23 de maio de 2024.</p>
+<h4>5. Assinaturas (Representantes Legais do Codeter)</h4>
+<table>
+<thead><tr><th>Nome do(a) Representante</th><th>Organização/Instituição</th><th>Município/UF</th><th>Contato (e-mail/telefone)</th></tr></thead>
+<tbody>
+<tr><td><span class="campo">[Nome]</span></td><td><span class="campo">[Org.]</span></td><td><span class="campo">[Mun./UF]</span></td><td><span class="campo">[contato]</span></td></tr>
+<tr><td><span class="campo">[Nome]</span></td><td><span class="campo">[Org.]</span></td><td><span class="campo">[Mun./UF]</span></td><td><span class="campo">[contato]</span></td></tr>
+<tr><td><span class="campo">[Nome]</span></td><td><span class="campo">[Org.]</span></td><td><span class="campo">[Mun./UF]</span></td><td><span class="campo">[contato]</span></td></tr>
+</tbody>
+</table>
+<p style="font-size:8.5pt;color:#888;margin-top:3mm">(As assinaturas devem contemplar, no mínimo, a Coordenação e a Secretaria do Codeter, garantindo a paridade entre sociedade civil e poder público.)</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">35</div></div>
+</div>
+
+<!-- MODELO 3 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="modelo-h"><h3>Modelo 3 - Documento de Constituição da Comissão de Implantação</h3></div>
+<div class="modelo-b">
+<p style="text-align:center;font-weight:700">COMISSÃO DE IMPLANTAÇÃO DO TERRITÓRIO <span class="campo">[NOME DO TERRITÓRIO]</span></p>
+<p><strong>Município-sede:</strong> <span class="campo">[Município – UF]</span><br><strong>E-mail:</strong> <span class="campo">[e-mail institucional]</span><br><strong>Telefone:</strong> <span class="campo">[telefone para contato]</span></p>
+<p style="font-weight:700">DECLARAÇÃO DE CONSTITUIÇÃO</p>
+<p>Nós, representantes de instituições da sociedade civil organizada e do poder público municipal/local, reunidos(as) em <span class="campo">[data]</span>, no município de <span class="campo">[Nome do Município]</span>, constituímos a Comissão de Implantação do Território <span class="campo">[Nome do Território]</span>, nos termos da Resolução Condraf nº 16, de 10 de junho de 2024 (com as alterações da Resolução Condraf nº 40/2025) e, quando aplicável, da legislação estadual vigente.</p>
+<h4>1. Finalidade da Comissão</h4>
+<p>A Comissão de Implantação tem as seguintes finalidades:</p>
+<p>a) Coordenar a elaboração dos documentos com argumentos que justificam a homologação do território, bem como do regimento interno do futuro Codeter;<br>b) Articular e integrar os municípios que comporão o território, garantindo a publicidade dos atos e a participação mínima de 50% (cinquenta por cento) da sociedade civil nas reuniões;<br>c) Representar formalmente os interessados perante o Ministério do Desenvolvimento Agrário e Agricultura Familiar (MDA), a Secretaria do Planejamento Estadual e o Conselho Nacional de Desenvolvimento Rural Sustentável (Condraf);<br>d) Assinar ofícios, atas e demais documentos oficiais relativos ao processo de homologação.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">36</div></div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 3 - Comissão de Implantação <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b">
+<h4>2. Composição</h4>
+<p>A Comissão será composta por representantes indicados pelas entidades abaixo relacionadas, assegurando-se a participação mínima de 50% da sociedade civil e a observância da paridade de gênero.</p>
+<p><strong>REPRESENTANTES DA SOCIEDADE CIVIL:</strong></p>
+<table><thead><tr><th>Nome Completo</th><th>Entidade/Organização Representada</th><th>CPF</th></tr></thead>
+<tbody><tr><td><span class="campo">[NOME COMPLETO]</span></td><td><span class="campo">[NOME DA ENTIDADE]</span></td><td><span class="campo">[Nº DO CPF]</span></td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td><span class="campo">[NOME DA ENTIDADE]</span></td><td><span class="campo">[Nº DO CPF]</span></td></tr></tbody></table>
+<p><strong>REPRESENTANTES DO PODER PÚBLICO:</strong></p>
+<table><thead><tr><th>Nome Completo</th><th>Entidade/Instituição Representada</th><th>CPF</th></tr></thead>
+<tbody><tr><td><span class="campo">[NOME COMPLETO]</span></td><td><span class="campo">[NOME DO ÓRGÃO]</span></td><td><span class="campo">[Nº DO CPF]</span></td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td><span class="campo">[NOME DO ÓRGÃO]</span></td><td><span class="campo">[Nº DO CPF]</span></td></tr></tbody></table>
+<p>A Comissão tem caráter transitório, atuando até a homologação do território pelo Condraf/MDA e a consequente instalação do Colegiado de Desenvolvimento Territorial Sustentável (Codeter) correspondente, quando suas funções serão transferidas a esse colegiado.</p>
+<h4>4. Assinaturas</h4>
+<p><strong>REPRESENTANTES DA SOCIEDADE CIVIL:</strong></p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">[NOME COMPLETO]</span> – <span class="campo">[CPF]</span></p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">[NOME COMPLETO]</span> – <span class="campo">[CPF]</span></p>
+<p><strong>REPRESENTANTES DO PODER PÚBLICO:</strong></p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">[NOME COMPLETO]</span> – <span class="campo">[CPF]</span></p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">[NOME COMPLETO]</span> – <span class="campo">[CPF]</span></p>
+<p><strong>Local e Data:</strong> <span class="campo">[Município-sede], [dia] de [mês] de [ano]</span>.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">37</div></div>
+</div>
+
+<!-- MODELO 4 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="modelo-h"><h3>Modelo 4 - Documento de Justificativa para a Criação do Território</h3></div>
+<div class="modelo-b">
+<p style="font-size:9pt;color:#888;font-style:italic">(Modelo orientador – pode ser adaptado conforme o contexto do território)</p>
+<h4>IDENTIFICAÇÃO</h4>
+<p><strong>Território proposto:</strong> <span class="campo">[Nome do Território]</span><br><strong>UF:</strong> <span class="campo">[Unidade(s) da Federação]</span><br><strong>Municípios integrantes:</strong> <span class="campo">[Listar todos os municípios]</span><br><strong>Data de elaboração:</strong> <span class="campo">[dd/mm/aaaa]</span><br><strong>Grupo de Trabalho responsável:</strong> <span class="campo">[Nome do GT ou Comissão de Implantação]</span><br><strong>Contato (e-mail/telefone):</strong> <span class="campo">[Preencher]</span></p>
+<h4>APRESENTAÇÃO</h4>
+<p>Este documento apresenta os argumentos que justificam a criação do território proposto, tendo sido elaborado pelo Grupo de Trabalho e submetido à apreciação da Comissão de Implantação. Após a homologação pelo Condraf, este documento servirá de base para a elaboração do Plano de Desenvolvimento Territorial Sustentável, orientando as ações e políticas públicas voltadas ao desenvolvimento do território.</p>
+<h4>1. IDENTIFICAÇÃO DO RECORTE TERRITORIAL</h4>
+<p><strong>1.1 Construção do recorte territorial</strong><br><span class="campo">[Descrever como os municípios foram definidos para compor o território, considerando proximidade geográfica, relações socioeconômicas, vínculos culturais, ambientais, institucionais e fluxos existentes entre eles. Indicar, quando pertinente, a existência de identidade territorial ou desafios comuns que aproximam os municípios.]</span></p>
+<h4>2. ARGUMENTOS QUE JUSTIFICAM A CRIAÇÃO DO TERRITÓRIO</h4>
+<p>Nesta seção, são apresentadas informações objetivas sobre o território, sempre que possível com exemplos concretos que demonstrem ações coletivas intermunicipais já existentes. Busca-se destacar os elementos comuns entre os municípios e evidenciar como a organização territorial contribuirá para o desenvolvimento sustentável da região.</p>
+<p><strong>2.1 Histórico</strong><br><span class="campo">[Descrever a formação histórica do conjunto de municípios e os principais processos de ocupação do território, destacando marcos temporais e eventos significativos que moldaram a configuração atual.]</span></p>
+<p><strong>2.2 Cultural</strong><br><span class="campo">[Apontar costumes e valores, religiosidade, manifestações culturais, gastronomia, produção cultural, festividades tradicionais e outras formas de expressão da realidade local que conferem identidade ao território.]</span></p>
+<p><strong>2.3 Geoambiental</strong><br><span class="campo">[Sintetizar as principais características geográficas e ambientais comuns, como topografia, hidrografia, clima, fauna, flora, solo, ecossistemas, bioma e aspectos relacionados à preservação dos recursos naturais, incluindo unidades de conservação ou áreas de proteção existentes.]</span></p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">38</div></div>
+</div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 4 <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b">
+<p><strong>2.4 Político-institucional</strong><br><span class="campo">[Identificar organizações, movimentos sociais e outras formas de expressão da sociedade civil e do poder público, a exemplo da existência de cooperativas, associações, sindicatos, conselhos municipais e consórcios públicos. Descrever o grau de articulação política das forças sociais no território e sua inserção no contexto estadual.]</span></p>
+<p><strong>2.5 Econômico</strong><br><span class="campo">[Caracterizar a base produtiva, especializações econômicas, conformação dos mercados, com destaque para os canais de comercialização agroalimentares territoriais (feiras, mercados públicos, casas da agricultura familiar, programas de compras institucionais etc.). Apontar fluxos comerciais e infraestrutura voltada à produção e às atividades econômicas.]</span></p>
+<p><strong>2.6 Mobilidade</strong><br><span class="campo">[Analisar fluxos de pessoas, infraestrutura de transporte (rodovias, ferrovias, hidrovias, transporte público), condições de deslocamento entre os municípios e movimentos migratórios que influenciam a dinâmica territorial.]</span></p>
+<p><strong>2.7 Educacional</strong><br><span class="campo">[Mapear a oferta educacional e as atividades formativas formais e não formais, incluindo a educação do campo, escolas técnicas, universidades, centros de formação profissional e projetos de educação contextualizada.]</span></p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">39</div></div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 4 <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b">
+<h4>3. CONCLUSÃO</h4>
+<p><span class="campo">[Consolidar, em um ou dois parágrafos, por que a criação do território é necessária, quais problemas ou desafios comuns justificam a atuação integrada e quais resultados se espera alcançar com a instituição do território e do Codeter. Retomar os principais argumentos apresentados ao longo do documento, reforçando a coerência territorial.]</span></p>
+<h4>4. RESPONSÁVEIS PELA ELABORAÇÃO</h4>
+<table>
+<thead><tr><th>Nome completo</th><th>Organização/Instituição</th><th>Município</th><th>Assinatura</th></tr></thead>
+<tbody>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td><span class="campo">[ORGANIZAÇÃO]</span></td><td><span class="campo">[MUNICÍPIO]</span></td><td></td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td><span class="campo">[ORGANIZAÇÃO]</span></td><td><span class="campo">[MUNICÍPIO]</span></td><td></td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td><span class="campo">[ORGANIZAÇÃO]</span></td><td><span class="campo">[MUNICÍPIO]</span></td><td></td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td><span class="campo">[ORGANIZAÇÃO]</span></td><td><span class="campo">[MUNICÍPIO]</span></td><td></td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td><span class="campo">[ORGANIZAÇÃO]</span></td><td><span class="campo">[MUNICÍPIO]</span></td><td></td></tr>
+</tbody>
+</table>
+<p style="font-size:9pt">[Adicionar linhas conforme necessário]</p>
+<p><strong>Local e data:</strong> <span class="campo">[Município], [dia] de [mês] de [ano]</span></p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">40</div></div>
+</div>
+
+<!-- MODELO 5 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="modelo-h"><h3>Modelo 5 - Regimento Interno do Codeter do <span class="campo" style="color:#ddd">[Nome do Território]</span></h3></div>
+<div class="modelo-b" style="font-size:9.5pt">
+<h4>CAPÍTULO I – DAS DISPOSIÇÕES PRELIMINARES</h4>
+<p><strong>Art. 1º</strong> O presente Regimento Interno disciplina a organização e o funcionamento do Colegiado de Desenvolvimento Territorial (Codeter) do Território <span class="campo">[Nome]</span>, em conformidade com as normas vigentes do Conselho Nacional de Desenvolvimento Rural Sustentável (Condraf) e demais instrumentos aplicáveis.</p>
+<p><strong>Art. 2º</strong> O Codeter tem por finalidade promover o desenvolvimento territorial sustentável, por meio da articulação entre políticas públicas, iniciativas comunitárias e organizações territoriais, assegurando participação social, pluralidade, diversidade e fortalecimento da governança territorial.</p>
+<h4>CAPÍTULO II – DA COMPOSIÇÃO, CRITÉRIOS E ORGANIZAÇÃO</h4>
+<p><strong>Art. 3º</strong> O Codeter será composto por representantes do poder público e da sociedade civil, observando obrigatoriamente os seguintes critérios de composição:<br>I – assegurar no mínimo 50% de representantes da sociedade civil, incluindo organizações formais e grupos informais do território;<br>II – assegurar que a participação de representantes do poder público não ultrapasse 50% do total de membros;<br>III – assegurar que, no conjunto da sociedade civil, no mínimo 50% das pessoas representantes sejam mulheres;<br>IV – assegurar que, no conjunto das representações governamentais, no mínimo 50% das pessoas representantes sejam mulheres.</p>
+<p><strong>Art. 4º</strong> O Codeter deverá adotar diretrizes de diversidade e inclusão, buscando:<br>I – buscar a participação mínima de 20% de jovens;<br>II – garantir a inclusão de representantes cuja identidade declarada expresse a diversidade de orientações sexuais e identidades de gênero existentes no território;<br>III – promover a representação de povos Indígenas, povos quilombolas, população negra e demais Povos e Comunidades Tradicionais, buscando alcançar, no mínimo, 30% do colegiado, com atenção à paridade de gênero e à proporção existente no território;<br>IV – estimular a participação de pessoas idosas, buscando progressivamente cerca de 20%.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">41</div></div>
+</div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 5 - Regimento Interno <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b" style="font-size:9.5pt">
+<p><strong>Art. 5º</strong> O Codeter organizar-se-á em:<br>I – Plenária;<br>II – Coordenação Executiva (ou Núcleo Diretivo);<br>III – Comitês Temáticos Permanentes;<br>IV – Grupos de Trabalho (GT), conforme necessidade.</p>
+<h4>CAPÍTULO III – DOS COMITÊS TEMÁTICOS PERMANENTES</h4>
+<p><strong>Art. 6º</strong> O Codeter deverá constituir, no mínimo, três Comitês Temáticos Permanentes, com caráter consultivo, dentre os seguintes temas, conforme a realidade do território:<br>I – Mulheres;<br>II – Juventude Rural e/ou Sucessão Rural;<br>III – Territorialidade e Direitos dos Povos e Comunidades Tradicionais;<br>IV – Arte, Cultura e Educação Popular;<br>V – Acesso à Assistência Técnica e Extensão Rural;<br>VI – Abastecimento, Acesso a Mercados e Segurança e Soberania Alimentar;<br>VII – Acesso à Terra e Regularização Fundiária;<br>VIII – Formas Socialmente Justas de Geração de Energia Limpa e/ou Impactos de Energias Renováveis;<br>IX – Acesso a outras políticas públicas;<br>X – Acompanhamento de projetos territoriais.</p>
+<p><strong>Art. 7º</strong> Os Comitês Temáticos deverão apresentar propostas, pareceres e encaminhamentos à Plenária e à Coordenação Executiva, conforme plano de trabalho definido.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">42</div></div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 5 - Regimento Interno <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b" style="font-size:9.5pt">
+<h4>CAPÍTULO IV – DAS COMPETÊNCIAS</h4>
+<p><strong>Art. 8º</strong> Compete ao Codeter:<br>I – planejar, articular e monitorar ações de desenvolvimento territorial sustentável;<br>II – promover a integração entre políticas públicas e iniciativas territoriais;<br>III – fortalecer a participação social e a representatividade territorial;<br>IV – elaborar, acompanhar e revisar o Plano de Desenvolvimento Territorial Sustentável;<br>V – propor prioridades e acompanhar projetos, programas e ações no território, com ênfase no monitoramento e territorialização das políticas públicas.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">43</div></div>
+</div>
+
+<!-- MODELO 5 cont -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 5 - Regimento Interno <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b" style="font-size:9.5pt">
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">44</div></div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 5 - Regimento Interno <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b" style="font-size:9.5pt">
+<h4>CAPÍTULO V – DAS REUNIÕES E DELIBERAÇÕES</h4>
+<p><strong>Art. 9º</strong> A Plenária do Codeter reunir-se-á ordinariamente a cada 60 (sessenta) dias e, extraordinariamente, quando convocada pela Coordenação Executiva ou por requerimento de, no mínimo, 20% de seus membros.</p>
+<p><strong>Art. 10</strong> As decisões da Plenária serão tomadas por maioria simples dos membros presentes.</p>
+<p><strong>Art. 11</strong> O quórum mínimo para deliberação será de:<br>I – 30% dos membros na primeira chamada;<br>II – 20% dos membros na segunda chamada.</p>
+<h4>CAPÍTULO VI – DA COORDENAÇÃO EXECUTIVA</h4>
+<p><strong>Art. 12</strong> A Coordenação Executiva será eleita pela Plenária, com mandato de dois anos, permitida uma recondução consecutiva.</p>
+<p><strong>Art. 13</strong> A composição da Coordenação Executiva deverá observar os critérios de diversidade, equidade de gênero e representatividade previstos neste Regimento.</p>
+<p><strong>Art. 14</strong> Compete à Coordenação Executiva:<br>I – representar o Codeter perante instituições e autoridades;<br>II – convocar e coordenar as reuniões da Plenária;<br>III – garantir o cumprimento das deliberações;<br>IV – organizar e manter atualizada a documentação do colegiado, com registro de ações em atas e na Plataforma Territórios da Cidadania – Sistema de Informações Territoriais;<br>V – articular o funcionamento dos Comitês Temáticos e dos Grupos de Trabalho.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">45</div></div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 5 - Regimento Interno <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b" style="font-size:9.5pt">
+<h4>CAPÍTULO VII – DOS GRUPOS DE TRABALHO</h4>
+<p><strong>Art. 15</strong> Os Grupos de Trabalho terão caráter temporário e serão instituídos para tratar de temas específicos, por decisão da Plenária ou da Coordenação Executiva.</p>
+<p><strong>Art. 16</strong> Cada Grupo de Trabalho deverá definir sua coordenação, plano de trabalho e prazos, apresentando relatórios ou encaminhamentos à Plenária.</p>
+<h4>CAPÍTULO VIII – DAS DISPOSIÇÕES GERAIS</h4>
+<p><strong>Art. 17</strong> Os casos omissos e as dúvidas surgidas na aplicação deste Regimento serão resolvidos pela Plenária do Codeter.</p>
+<p><strong>Art. 18</strong> Este Regimento poderá ser alterado por decisão da Plenária, mediante proposta de qualquer membro e aprovação de dois terços dos votos.</p>
+<p><strong>Art. 19</strong> Este Regimento entra em vigor na data de sua aprovação pela Plenária do Codeter.</p>
+<p style="font-weight:700;margin-top:3mm">APROVAÇÃO</p>
+<p>Aprovado pela Plenária do Codeter do Território <span class="campo">[Nome]</span>.<br>Data: <span class="campo">[dia] de [mês] de [ano]</span><br>Local: <span class="campo">[Município/DF]</span></p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">[Nome]</span> — Coordenador(a) Provisório(a)</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">46</div></div>
+</div>
+
+<!-- MODELO 6 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="modelo-h"><h3>Modelo 6 - Ata da Reunião Deliberativa sobre a Criação do Território <span class="campo" style="color:#ddd">[Nome do Território]</span></h3></div>
+<div class="modelo-b">
+<p style="text-align:center;font-weight:700">ATA Nº <span class="campo">___/ANO</span> - REUNIÃO DELIBERATIVA DA COMISSÃO DE IMPLANTAÇÃO DO TERRITÓRIO <span class="campo">[NOME]</span></p>
+<p><strong>Município-sede:</strong> <span class="campo">[Município – UF]</span><br><strong>E-mail para contato institucional:</strong> <span class="campo">[e-mail]</span></p>
+<p>Aos <span class="campo">[dia]</span> dias do mês de <span class="campo">[mês]</span> do ano de <span class="campo">[ano]</span>, às <span class="campo">[hora]</span>, reuniram-se, de forma <span class="campo">[presencial/virtual]</span>, os(as) representantes da sociedade civil organizada e do poder público dos municípios <span class="campo">[listar municípios]</span>, compondo a Comissão de Implantação do Território <span class="campo">[Nome do Território]</span>.</p>
+<p>A reunião foi conduzida por <span class="campo">[Nome do(a) Coordenador(a) Provisório(a)]</span>, que apresentou os objetivos da comissão e a necessidade de homologação do território junto ao Conselho Nacional de Desenvolvimento Rural Sustentável (Condraf/MDA). Na sequência, foi discutido e aprovado o Documento de Justificativa para a Criação do Território, elaborado coletivamente, o qual demonstra a coerência territorial nos aspectos histórico, cultural, geoambiental, socioeconômico, político-institucional, educacional e de mobilidade. Também foi apresentado e aprovado o Regimento Interno proposto para o Codeter, assegurando a paridade mínima de 50% de representantes da sociedade civil e a paridade de gênero entre titulares e suplentes.</p>
+<p>A plenária, com ampla divulgação e presença paritária, deliberou pela criação do Território <span class="campo">[Nome do Território]</span> e pela instalação do respectivo Colegiado de Desenvolvimento Territorial Sustentável (Codeter).</p>
+<p>Nada mais havendo a tratar, foi lavrada a presente ata que, após lida e aprovada, segue assinada pelo(as) participantes e acompanhada da lista de presença nominal (anexa), contendo nome, organização, município e assinatura/validação digital.</p>
+<p><span class="campo">[Local]</span>, <span class="campo">[dia] de [mês] de [ano]</span>.</p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">[Nome]</span> — Coordenador(a) da Comissão de Implantação</p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">[Nome]</span> — Secretário(a) da Reunião</p>
+<p><strong>ANEXO</strong></p>
+<ul><li>Lista de presença dos(as) participantes</li><li>Comprovantes de ampla divulgação da convocação</li></ul>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">47</div></div>
+</div>
+
+<!-- MODELO 7 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="modelo-h"><h3>Modelo 7 - Ata da Assembleia ou Fórum Municipal de <span class="campo" style="color:#ddd">[Nome do Município]</span></h3></div>
+<div class="modelo-b">
+<p style="text-align:center;font-weight:700">ATA Nº <span class="campo">___/ANO</span> - <span class="campo">[ASSEMBLEIA/FÓRUM]</span> MUNICIPAL DE DESENVOLVIMENTO SUSTENTÁVEL DE <span class="campo">[NOME DO MUNICÍPIO]</span></p>
+<p style="text-align:center;font-weight:700;font-size:10pt"><span class="campo">[ASSEMBLEIA/FÓRUM]</span> MUNICIPAL DE DESENVOLVIMENTO SUSTENTÁVEL DE <span class="campo">[NOME DO MUNICÍPIO]</span></p>
+<p>Convocada pelo <span class="campo">[Conselho Municipal de Desenvolvimento Rural – CMDRS ou órgão equivalente]</span>*</p>
+<p style="font-size:9pt;color:#888">*Nota: em caso de inexistência ou desinteresse pelo tema da parte do CMDR, a convocação será realizada pela Comissão de Implantação.</p>
+<p>Aos <span class="campo">[dia]</span> dias do mês de <span class="campo">[mês]</span> do ano de <span class="campo">[ano]</span>, às <span class="campo">[hora]</span>, realizou-se, no(a) <span class="campo">[local ex.: Câmara Municipal, Sindicato, Escola]</span>, a Assembleia/Fórum Municipal de Desenvolvimento Sustentável de <span class="campo">[Município]</span>, convocada pelo <span class="campo">[CMDR, órgão equivalente ou Comissão de Implantação]</span>, com ampla divulgação prévia e a participação de representantes da sociedade civil e do poder público, assegurando-se a participação mínima de 50% da sociedade civil.</p>
+<p>Estiveram presentes <span class="campo">[número]</span> participantes, representando as seguintes organizações da sociedade civil e órgãos públicos: <span class="campo">[listar entidades da sociedade civil]</span> e <span class="campo">[listar órgãos do poder público]</span>.</p>
+<p>A assembleia teve como pauta principal a deliberação sobre a adesão do município de <span class="campo">[Nome do Município]</span> ao Território <span class="campo">[Nome do Território]</span>, conforme previsto na Resolução Condraf nº 16/2024.</p>
+<p>Após a exposição da proposta pela Comissão de Implantação, foi aberta a palavra para manifestações. Registrou-se:</p>
+<ul><li><span class="campo">[Resumo das falas principais]</span>;</li><li><span class="campo">[Indicações de apoio ou ressalvas]</span>.</li></ul>
+<p>Submetida à votação, a proposta de adesão do município de <span class="campo">[Nome do Município]</span> ao Território <span class="campo">[Nome do Território]</span> foi aprovada por <span class="campo">[maioria/unanimidade]</span>.</p>
+<p>Nada mais havendo a tratar, lavrou-se a presente ata, que será assinada pelos presentes e encaminhada à Comissão de Implantação do Território <span class="campo">[Nome do Território]</span> para compor o processo de homologação.</p>
+<p><span class="campo">[Local]</span>, <span class="campo">[dia] de [mês] de [ano]</span>.</p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">[Nome]</span> — Presidente do CMDRS / Comissão de Implantação</p>
+<div class="assin"></div><p style="font-size:9pt"><span class="campo">[Nome]</span> — Secretário(a) da Assembleia</p>
+<p><strong>ANEXO</strong></p>
+<p>Lista de presença com nome, entidade, setor (sociedade civil/poder público), município e assinatura/validação digital.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">48</div></div>
+</div>
+
+<!-- MODELO 8 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="modelo-h"><h3>Modelo 8 - Ofício de Solicitação da Homologação de Novo Território</h3></div>
+<div class="modelo-b">
+<p style="text-align:right"><strong>OFÍCIO Nº <span class="campo">[____]/[ANO]</span></strong><br><span class="campo">[Município – UF]</span>, <span class="campo">[dia] de [mês] de [ano]</span>.</p>
+<p>À Secretaria de Governança Fundiária, Desenvolvimento Territorial e Socioambiental (SFDT/MDA)<br>A/C: Secretaria-Executiva do Conselho Nacional de Desenvolvimento Rural Sustentável (Condraf)<br>Brasília – DF</p>
+<p><strong>Assunto:</strong> Solicitação de homologação do Território <span class="campo">[Nome]</span></p>
+<p>Senhor(a) Secretário(a),</p>
+<p>A Comissão de Implantação do Território <span class="campo">[Nome do Território]</span>, constituída conforme documentação anexa, vem solicitar a homologação do referido território no âmbito do PNDTS – Programa Territórios da Cidadania, nos termos da Resolução Condraf nº 16, de 10 de junho de 2024 (com as alterações da Resolução Condraf nº 40/2025).</p>
+<p>Encaminhamos, para análise, o conjunto documental exigido para o processo de homologação, a saber:</p>
+<ul>
+<li>Documento de Constituição da Comissão de Implantação;</li>
+<li>Atas das Assembleias ou Fóruns Municipais de adesão;</li>
+<li>Documento de Justificativa para a Criação do Território;</li>
+<li>Regimento Interno do Codeter;</li>
+<li>Ata da Reunião Deliberativa sobre a criação do território.</li>
+</ul>
+<p>Informamos que foi dada ciência deste encaminhamento à Superintendência Federal do MDA no estado e aos conselhos ou colegiados estaduais de desenvolvimento rural/territorial, ou equivalentes, quando existentes.</p>
+<p>Atenciosamente,</p>
+<div class="assin"></div>
+<p><span class="campo">[NOME COMPLETO]</span><br>Coordenação da Comissão de Implantação do Território <span class="campo">[Nome do Território]</span><br>Município-sede: <span class="campo">[Município – UF]</span><br>E-mail institucional: <span class="campo">[e-mail]</span><br>Telefone: <span class="campo">[telefone]</span></p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">49</div></div>
+</div>
+
+<!-- MODELO 9 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="modelo-h"><h3>Modelo 9 - Declaração de Homologação de Território pelo Governo Estadual</h3></div>
+<div class="modelo-b">
+<h4>1. IDENTIFICAÇÃO DO TERRITÓRIO</h4>
+<p><strong>Nome do território:</strong> <span class="campo">[Nome]</span><br><strong>Unidade da Federação:</strong> <span class="campo">[UF]</span><br><strong>Municípios que compõem o território:</strong> <span class="campo">[Lista completa dos municípios, com código IBGE, se possível]</span></p>
+<h4>2. DECLARAÇÃO</h4>
+<p>O Colegiado de Desenvolvimento Territorial (Codeter) do Território <span class="campo">[Nome do Território]</span>, no uso de suas atribuições e em reunião realizada em <span class="campo">[data]</span>, conforme Ata nº <span class="campo">__/____</span>, DECLARA, para os devidos fins, que o território supracitado já se encontra instituído/homologado pelo governo do estado do <span class="campo">[UF]</span>, conforme documentação anexa, manifestando interesse em sua homologação junto ao governo federal.</p>
+<h4>3. ANEXOS QUE ACOMPANHAM ESTA DECLARAÇÃO</h4>
+<ul>
+<li>Documentação estadual comprobatória de instituição/homologação do território;</li>
+<li>Ata da Reunião do Codeter de Aprovação do Pedido de Homologação pelo Governo Federal;</li>
+<li>Listagem atualizada das organizações que compõem o Codeter;</li>
+<li>Regimento Interno do Codeter.</li>
+</ul>
+<h4>4. ASSINATURAS</h4>
+<table>
+<thead><tr><th>Nome</th><th>Função no Codeter</th><th>Assinatura</th></tr></thead>
+<tbody>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td>Coordenação do Codeter</td><td>_________________________</td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td>Secretaria Executiva do Codeter</td><td>_________________________</td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td>Representante da Sociedade Civil</td><td>_________________________</td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td>Representante do Poder Público</td><td>_________________________</td></tr>
+</tbody>
+</table>
+<p style="font-size:9pt">(Adicionar linhas conforme necessário, assegurando a representação paritária)</p>
+<p><strong>Local e data:</strong> <span class="campo">[Município], [dia] de [mês] de [ano]</span>.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">50</div></div>
+</div>
+
+<!-- MODELO 10 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="modelo-h"><h3>Modelo 10 - Ata da Reunião do Codeter de Aprovação do Pedido de Homologação pelo Governo Federal</h3></div>
+<div class="modelo-b">
+<p style="font-size:9pt;color:#888;font-style:italic">(Para território já instituído/homologado pelo governo estadual)</p>
+<p style="text-align:center;font-weight:700">ATA Nº <span class="campo">[____/ANO]</span> – REUNIÃO <span class="campo">[ORDINÁRIA/EXTRAORDINÁRIA]</span> DO CODETER DO TERRITÓRIO <span class="campo">[NOME DO TERRITÓRIO]</span></p>
+<p><strong>Data:</strong> <span class="campo">[dia] de [mês] de [ano]</span><br><strong>Horário:</strong> <span class="campo">[hora]</span> às <span class="campo">[hora]</span><br><strong>Local:</strong> <span class="campo">[endereço completo, município – UF / ou plataforma virtual]</span></p>
+<h4>1. CONVOCAÇÃO E PUBLICIDADE</h4>
+<p>A reunião foi convocada com antecedência e ampla divulgação nos meios locais, garantindo a participação dos representantes do poder público e da sociedade civil, em conformidade com os princípios de transparência e participação social que regem este Colegiado. Os registros de divulgação e a lista de presença seguem anexos a esta ata.</p>
+<h4>2. PAUTA</h4>
+<ul>
+<li>Apresentação da documentação estadual de instituição/homologação do território;</li>
+<li>Deliberação sobre o pedido de homologação em nível federal no âmbito do PNDTS - Territórios da Cidadania;</li>
+<li>Apreciação e aprovação da Declaração de Homologação de Território pelo Governo Estadual;</li>
+<li>Validação da Listagem atualizada das organizações que compõem o Codeter;</li>
+<li>Encaminhamentos para envio à SFDT/MDA, bem como para ciência das instâncias estaduais e da Superintendência Federal do MDA no estado.</li>
+</ul>
+<h4>3. DELIBERAÇÕES</h4>
+<p>Após ampla discussão e análise da documentação apresentada, a Plenária deliberou:</p>
+<p>a) APROVAR o pedido de homologação federal do Território <span class="campo">[Nome do Território]</span>;<br>b) APROVAR a Declaração de Homologação de Território pelo Governo Estadual, conforme documento anexo;<br>c) VALIDAR a Listagem atualizada das organizações que compõem o Codeter, assegurando a paridade mínima de 50% da sociedade civil e a paridade de gênero;<br>d) AUTORIZAR o encaminhamento da documentação completa à Secretaria de Governança Fundiária, Desenvolvimento Territorial e Socioambiental (SFDT/MDA), dando-se ciência às instâncias competentes.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">51</div></div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 10 - Ata da Reunião do Codeter <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b">
+<h4>4. ENCERRAMENTO</h4>
+<p>Nada mais havendo a tratar, a reunião foi encerrada e lavrada a presente ata, que segue assinada.</p>
+<p><strong>ASSINATURAS</strong></p>
+<table>
+<thead><tr><th>Nome</th><th>Função no Codeter</th><th>Assinatura</th></tr></thead>
+<tbody>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td>Coordenação do Codeter</td><td>_________________________</td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td>Secretaria Executiva do Codeter</td><td>_________________________</td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td>Representante da Sociedade Civil</td><td>_________________________</td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td>Representante do Poder Público</td><td>_________________________</td></tr>
+</tbody>
+</table>
+<p style="font-size:9pt">(Adicionar linhas conforme necessário, assegurando a representação paritária)</p>
+<p><strong>Local e data:</strong> <span class="campo">[Município], [dia] de [mês] de [ano]</span>.</p>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">52</div></div>
+</div>
+
+<!-- MODELO 11 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="modelo-h"><h3>Modelo 11 - Ofício de Solicitação da Reconfiguração do Território</h3></div>
+<div class="modelo-b">
+<p><strong>CODETER DO TERRITÓRIO <span class="campo">[NOME DO TERRITÓRIO]</span></strong><br>Município-sede: <span class="campo">[Cidade – UF]</span><br>E-mail: <span class="campo">[Contato Institucional]</span></p>
+<p style="text-align:right"><strong>OFÍCIO Nº <span class="campo">[XX]/[ANO]</span></strong><br><span class="campo">[Município-sede]</span>, <span class="campo">[dia] de [mês] de [ano]</span></p>
+<p>À Secretaria de Governança Fundiária, Desenvolvimento Territorial e Socioambiental – SFDT/MDA<br>A/C: Conselho Nacional de Desenvolvimento Rural Sustentável (Condraf)<br><strong>Assunto:</strong> Solicitação de Reconfiguração do Território <span class="campo">[Nome do Território]</span><br><strong>Cc:</strong> Superintendência do MDA no estado <span class="campo">[UF]</span> e conselho ou colegiado estadual de desenvolvimento rural/territorial, ou equivalentes (quando houver).</p>
+<p>Senhor(a) Secretário(a),</p>
+<p>O Colegiado de Desenvolvimento Territorial Sustentável (Codeter) do Território <span class="campo">[Nome do Território]</span>, por intermédio de sua coordenação, vem solicitar a reconfiguração do referido território, nos termos da Resolução Condraf nº 16/2024.</p>
+<p>A presente solicitação decorre da necessidade de adequar a composição territorial, considerando:</p>
+<ul>
+<li>Inclusão de novos municípios <span class="campo">[listar]</span>;</li>
+<li>Exclusão/desmembramento de municípios <span class="campo">[listar]</span>;</li>
+<li>Alterações decorrentes de lei estadual (quando aplicável).</li>
+</ul>
+<p>Encaminhamos, para análise, os documentos que compõem o processo de reconfiguração, conforme previsto no art. 6º da Resolução Condraf nº 16/2024:</p>
+<ol>
+<li>Documento de Justificativa/Declaração de Reconfiguração;</li>
+<li>Ata da Reunião do Codeter com Manifestação Favorável à Reconfiguração do Território;</li>
+<li>Atas de Assembleias/Fóruns Municipais (quando houver ingresso de novos municípios);</li>
+<li>Lista de presença da plenária.</li>
+</ol>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">53</div></div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 11 <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b">
+<p>Colocamo-nos à disposição para prestar quaisquer esclarecimentos adicionais que se fizerem necessários.</p>
+<p>Atenciosamente,</p>
+<div class="assin"></div>
+<p><span class="campo">[NOME COMPLETO]</span><br>Presidente/Coordenador(a) do Codeter do Território <span class="campo">[Nome do Território]</span><br>Município-sede: <span class="campo">[Cidade – UF]</span><br>E-mail: <span class="campo">[e-mail]</span><br>Telefone: <span class="campo">[telefone]</span></p>
+<p><strong>ANEXOS</strong></p>
+<ul>
+<li>Lista de presença dos(as) participantes da reunião do Codeter;</li>
+<li>Em caso de inclusão de novo município, os documentos relacionados à convocação de assembleia/fórum municipal e a respectiva ata.</li>
+</ul>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">54</div></div>
+</div>
+
+<!-- MODELO 12 -->
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<div class="modelo-h"><h3>Modelo 12 - Ata da Reunião do Codeter com Manifestação Favorável à Reconfiguração do Território</h3></div>
+<div class="modelo-b">
+<p style="text-align:center;font-weight:700">ATA Nº <span class="campo">[____/ANO]</span> - REUNIÃO <span class="campo">[ORDINÁRIA/EXTRAORDINÁRIA]</span> DO CODETER DO TERRITÓRIO <span class="campo">[NOME]</span></p>
+<p><strong>Data:</strong> <span class="campo">[dia] de [mês] de [ano]</span><br><strong>Horário:</strong> <span class="campo">[hora]</span> às <span class="campo">[hora]</span><br><strong>Local:</strong> <span class="campo">[endereço completo, município – UF / ou plataforma virtual]</span></p>
+<p>Aos <span class="campo">[dia]</span> dias do mês de <span class="campo">[mês]</span> do ano de <span class="campo">[ano]</span>, às <span class="campo">[hora]</span>, reuniram-se, de forma <span class="campo">[presencial/virtual]</span>, no(a) <span class="campo">[local ou plataforma virtual]</span>, os(as) representantes do Colegiado de Desenvolvimento Territorial Sustentável (Codeter) do Território <span class="campo">[Nome do Território]</span>, composto por membros da sociedade civil e do poder público dos municípios integrantes.</p>
+<h4>1. ABERTURA</h4>
+<p>A reunião foi presidida por <span class="campo">[Nome do(a) Coordenador(a)]</span>, que deu as boas-vindas aos presentes e apresentou a pauta principal: a reconfiguração do Território <span class="campo">[Nome do Território]</span>, em conformidade com a Resolução Condraf nº 16, de 23 de maio de 2024.</p>
+<h4>2. APRESENTAÇÃO DA PROPOSTA</h4>
+<p>Foi apresentada a Declaração de Reconfiguração, contendo a nova composição municipal e institucional do território, bem como as justificativas para inclusão e/ou exclusão de municípios, conforme detalhado a seguir:</p>
+<ul>
+<li>Inclusão dos municípios: <span class="campo">[listar]</span>;</li>
+<li>Exclusão/desmembramento dos municípios: <span class="campo">[listar]</span>.</li>
+</ul>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">55</div></div>
+</div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 12 <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b">
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">56</div></div>
+</div>
+
+<div class="page">
+<div class="page-sidebar"></div><div class="page-sidebar-right"></div>
+<div class="page-content" style="padding-top:8mm">
+<h3>Modelo 12 <span style="font-size:9pt;color:#999">(continuação)</span></h3>
+<div class="modelo-b">
+<h4>3. DEBATE E DELIBERAÇÕES</h4>
+<p>Após amplo debate, os(as) conselheiros(as) deliberaram:</p>
+<p>a) APROVAR, por <span class="campo">[unanimidade/maioria]</span>, a reconfiguração do Território <span class="campo">[Nome do Território]</span>, nos termos da proposta apresentada;<br>b) RATIFICAR a Declaração de Reconfiguração como documento oficial do processo;<br>c) REAFIRMAR o compromisso do Codeter com a participação mínima de 50% da sociedade civil e a paridade de gênero entre titulares e suplentes;<br>d) AUTORIZAR o encaminhamento da documentação à SFDT/MDA para os devidos fins.</p>
+<h4>4. ENCERRAMENTO</h4>
+<p>Nada mais havendo a tratar, foi encerrada a reunião às <span class="campo">[hora]</span>, e eu, <span class="campo">[Nome do(a) Secretário(a)]</span>, lavrei a presente ata, que após lida e aprovada pelos presentes, segue assinada pela coordenação do Codeter, pela secretaria da reunião e pelos demais participantes, conforme lista de presença anexa.</p>
+<p><strong>ASSINATURAS</strong></p>
+<table>
+<thead><tr><th>Nome</th><th>Função</th><th>Assinatura</th></tr></thead>
+<tbody>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td>Presidente/Coordenador(a) do Codeter</td><td>_________________________</td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td>Secretário(a) da Reunião</td><td>_________________________</td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td>Representante da Sociedade Civil</td><td>_________________________</td></tr>
+<tr><td><span class="campo">[NOME COMPLETO]</span></td><td>Representante do Poder Público</td><td>_________________________</td></tr>
+</tbody>
+</table>
+<p style="font-size:9pt">(Adicionar linhas conforme necessário)</p>
+<p><strong>Local e data:</strong> <span class="campo">[Município], [dia] de [mês] de [ano]</span>.</p>
+<p><strong>ANEXOS</strong></p>
+<ul>
+<li>Lista de presença da plenária (com nome, organização, município e assinatura/validação digital);</li>
+<li>Ata da Assembleia/Fórum municipal de inclusão de município (se houver);</li>
+<li>Declaração de Reconfiguração do Território.</li>
+</ul>
+</div>
+</div>
+<div class="page-footer"><img class="footer-logo" src="img/logo-rodape.png" alt="Governo Federal - MDA"><span>Guia de Homologações, Revalidações e Reconfigurações Territoriais</span><div class="page-number">57</div></div>
+</div>
+
+<!-- BARRA DE FERRAMENTAS -->
+<div class="edit-toolbar" id="editToolbar">
+<div class="toolbar-row toolbar-row-1">
+  <div class="toolbar-title">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+    Editor
+  </div>
+  <span class="status" id="editStatus">Clique em qualquer texto para editar</span>
+  <button onclick="cmd('undo')" title="DESFAZER: Volta a última alteração que você fez (atalho: Ctrl+Z)">&#8630; Desfazer</button>
+  <button onclick="cmd('redo')" title="REFAZER: Restaura a alteração que você desfez (atalho: Ctrl+Y)">&#8631; Refazer</button>
+  <div class="toolbar-sep"></div>
+  <button onclick="toggleEdit()" id="btnToggle" title="BLOQUEAR/DESBLOQUEAR: Trava a edição para não alterar nada sem querer. Clique de novo para desbloquear.">&#128274; Bloquear</button>
+  <button class="btn-mode" onclick="toggleModoContinuo()" id="btnModo" title="MODO CONTÍNUO: Remove os espaços em branco entre as páginas, mostrando o documento corrido. Clique de novo para voltar ao modo de páginas A4 separadas.">&#128196; Modo Contínuo</button>
+  <div class="toolbar-sep"></div>
+  <button class="btn-save" onclick="salvarHTML()" title="SALVAR: Baixa o documento editado como arquivo HTML para o seu computador (atalho: Ctrl+S)">&#128190; Salvar</button>
+  <button class="btn-pdf" onclick="window.print()" title="GERAR PDF: Abre a tela de impressão do navegador. Escolha 'Salvar como PDF' para gerar o PDF.">&#128424; PDF</button>
+  <button onclick="abrirAjuda()" title="AJUDA: Abre o guia completo de como usar todas as ferramentas de edição" style="background:rgba(255,255,255,.2);font-weight:700;padding:4px 12px">? Ajuda</button>
+</div>
+<div class="toolbar-row toolbar-row-2">
+  <!-- Fonte -->
+  <div class="toolbar-group">
+    <span class="toolbar-label">Fonte</span>
+    <select id="selFont" onchange="cmdVal('fontName',this.value)" title="TIPO DE FONTE: Selecione o texto primeiro, depois escolha a fonte desejada. O texto selecionado mudará para a fonte escolhida.">
+      <option value="Aptos">Aptos</option>
+      <option value="Calibri">Calibri</option>
+      <option value="Tahoma">Tahoma</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Arial">Arial</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Segoe UI">Segoe UI</option>
+    </select>
+  </div>
+  <!-- Tamanho -->
+  <div class="toolbar-group">
+    <span class="toolbar-label">Tam.</span>
+    <select id="selSize" onchange="cmdVal('fontSize',this.value)" title="TAMANHO DA FONTE: Selecione o texto primeiro, depois escolha o tamanho. Quanto maior o número, maior a letra.">
+      <option value="1">8</option>
+      <option value="2">10</option>
+      <option value="3" selected>12</option>
+      <option value="4">14</option>
+      <option value="5">18</option>
+      <option value="6">24</option>
+      <option value="7">36</option>
+    </select>
+  </div>
+  <div class="toolbar-sep"></div>
+  <!-- Formatação -->
+  <div class="toolbar-group">
+    <button onclick="cmd('bold')" title="NEGRITO: Deixa o texto selecionado em negrito/grosso (atalho: Ctrl+B)" style="font-weight:900;padding:4px 8px"><b>N</b></button>
+    <button onclick="cmd('italic')" title="ITÁLICO: Deixa o texto selecionado inclinado (atalho: Ctrl+I)" style="font-style:italic;padding:4px 8px"><i>I</i></button>
+    <button onclick="cmd('underline')" title="SUBLINHADO: Coloca uma linha embaixo do texto selecionado (atalho: Ctrl+U)" style="text-decoration:underline;padding:4px 8px"><u>S</u></button>
+    <button onclick="cmd('strikeThrough')" title="TACHADO: Coloca uma linha cortando o texto selecionado ao meio" style="text-decoration:line-through;padding:4px 8px">abc</button>
+  </div>
+  <div class="toolbar-sep"></div>
+  <!-- Cores -->
+  <div class="toolbar-group">
+    <span class="toolbar-label">Cor</span>
+    <input type="color" id="txtColor" value="#3C3C3C" onchange="cmdVal('foreColor',this.value)" title="COR DO TEXTO: Selecione o texto e clique aqui para mudar a cor das letras. Escolha a cor na paleta que abrir.">
+    <span class="toolbar-label">Fundo</span>
+    <input type="color" id="bgColor" value="#FFFFFF" onchange="cmdVal('hiliteColor',this.value)" title="COR DE DESTAQUE: Selecione o texto e clique aqui para destacar com cor de fundo, como um marca-texto.">
+  </div>
+  <div class="toolbar-sep"></div>
+  <!-- Alinhamento -->
+  <div class="toolbar-group">
+    <button onclick="cmd('justifyLeft')" title="ALINHAR À ESQUERDA: O texto fica alinhado do lado esquerdo">&#8676;</button>
+    <button onclick="cmd('justifyCenter')" title="CENTRALIZAR: O texto fica centralizado no meio">&#8596;</button>
+    <button onclick="cmd('justifyRight')" title="ALINHAR À DIREITA: O texto fica alinhado do lado direito">&#8677;</button>
+    <button onclick="cmd('justifyFull')" title="JUSTIFICAR: O texto fica alinhado dos dois lados, distribuído uniformemente">&#9776;</button>
+  </div>
+  <div class="toolbar-sep"></div>
+  <!-- Espaçamento -->
+  <div class="toolbar-group">
+    <span class="toolbar-label">Espaço</span>
+    <button onclick="ajustarEspaco('mais')" title="MAIS ESPAÇO ACIMA: Aumenta o espaço em branco acima do parágrafo onde está o cursor">&#9650;+</button>
+    <button onclick="ajustarEspaco('menos')" title="MENOS ESPAÇO ACIMA: Diminui o espaço em branco acima do parágrafo onde está o cursor">&#9650;-</button>
+    <button onclick="ajustarEspaco('maisB')" title="MAIS ESPAÇO ABAIXO: Aumenta o espaço em branco abaixo do parágrafo onde está o cursor">&#9660;+</button>
+    <button onclick="ajustarEspaco('menosB')" title="MENOS ESPAÇO ABAIXO: Diminui o espaço em branco abaixo do parágrafo onde está o cursor">&#9660;-</button>
+  </div>
+  <div class="toolbar-sep"></div>
+  <!-- Linha/Recuo -->
+  <div class="toolbar-group">
+    <span class="toolbar-label">Linha</span>
+    <select onchange="ajustarLineHeight(this.value)" title="ESPAÇAMENTO ENTRE LINHAS: Controla a distância entre uma linha e outra dentro do mesmo parágrafo. 1.0 = colado, 2.0 = bem espaçado.">
+      <option value="">--</option>
+      <option value="1.0">1.0</option>
+      <option value="1.2">1.2</option>
+      <option value="1.4">1.4</option>
+      <option value="1.65">1.65</option>
+      <option value="1.8">1.8</option>
+      <option value="2.0">2.0</option>
+    </select>
+    <button onclick="cmd('indent')" title="AUMENTAR RECUO: Empurra o parágrafo para a direita (atalho: Tab)">&#8680;</button>
+    <button onclick="cmd('outdent')" title="DIMINUIR RECUO: Empurra o parágrafo de volta para a esquerda (atalho: Shift+Tab)">&#8678;</button>
+  </div>
+  <div class="toolbar-sep"></div>
+  <!-- Inserir -->
+  <div class="toolbar-group">
+    <button onclick="cmd('insertHorizontalRule')" title="LINHA HORIZONTAL: Insere uma linha divisória horizontal no local do cursor">&#9473;</button>
+    <button onclick="inserirImagem()" title="INSERIR IMAGEM: Abre uma janela para você escolher uma imagem do seu computador e inserir no documento">&#128247; Img</button>
+    <button onclick="inserirParagrafo()" title="INSERIR PARÁGRAFO: Cria um espaço editável logo abaixo do card/caixa onde está o cursor, para você digitar ou colar texto fora da caixa (atalho: Escape)">&#182; Parágrafo</button>
+    <button onclick="excluirBloco()" title="EXCLUIR BLOCO: Remove o card/caixa/elemento inteiro onde está o cursor. Pede confirmação antes de apagar." style="background:rgba(230,81,0,.3);border-color:rgba(230,81,0,.5)">&#128465; Excluir</button>
+    <button onclick="cmd('removeFormat')" title="LIMPAR FORMATAÇÃO: Remove negrito, itálico, cores e outros estilos do texto selecionado, deixando texto puro">&#10060; Limpar</button>
+  </div>
+</div>
+</div>
+
+<!-- MODAL DE AJUDA -->
+<div id="modalAjuda" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);z-index:99999;overflow-y:auto;padding:30px">
+<div style="max-width:750px;margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.4);overflow:hidden">
+  <div style="background:linear-gradient(135deg,#022A69,#183EFF);color:#fff;padding:20px 30px;display:flex;justify-content:space-between;align-items:center">
+    <h2 style="margin:0;font-size:16pt;color:#fff;border:none;padding:0">Guia de Ferramentas de Edição</h2>
+    <button onclick="fecharAjuda()" style="background:rgba(255,255,255,.2);color:#fff;border:none;padding:8px 16px;border-radius:6px;cursor:pointer;font-size:11pt;font-weight:700">&times; Fechar</button>
+  </div>
+  <div style="padding:25px 30px;font-size:10.5pt;color:#333;line-height:1.7">
+
+    <h3 style="color:#183EFF;margin:0 0 8px;font-size:13pt;border-bottom:2px solid #00C100;padding-bottom:5px">Como Editar Textos</h3>
+    <p><b>Clique em qualquer texto</b> do documento para posicionar o cursor e comece a digitar. Funciona igual ao Word!</p>
+    <p>Para <b>selecionar texto</b>, clique e arraste com o mouse, ou use Shift + setas do teclado.</p>
+
+    <h3 style="color:#183EFF;margin:15px 0 8px;font-size:13pt;border-bottom:2px solid #00C100;padding-bottom:5px">Barra de Ferramentas - Linha 1 (Superior)</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:10pt;margin:8px 0">
+      <tr style="background:#E8EEFF"><td style="padding:8px;font-weight:700;width:140px">&#8630; Desfazer</td><td style="padding:8px">Volta a última alteração. Atalho: <b>Ctrl+Z</b></td></tr>
+      <tr><td style="padding:8px;font-weight:700">&#8631; Refazer</td><td style="padding:8px">Restaura o que você desfez. Atalho: <b>Ctrl+Y</b></td></tr>
+      <tr style="background:#E8EEFF"><td style="padding:8px;font-weight:700">&#128274; Bloquear</td><td style="padding:8px">Trava a edição para não alterar sem querer. Clique de novo para desbloquear.</td></tr>
+      <tr><td style="padding:8px;font-weight:700">&#128196; Modo Contínuo</td><td style="padding:8px"><b>Remove os espaços em branco</b> entre as páginas, mostrando o documento corrido. Ótimo para editar. Clique de novo para voltar às páginas A4.</td></tr>
+      <tr style="background:#E8EEFF"><td style="padding:8px;font-weight:700">&#128190; Salvar</td><td style="padding:8px">Baixa o documento editado para o seu computador como arquivo HTML. Atalho: <b>Ctrl+S</b></td></tr>
+      <tr><td style="padding:8px;font-weight:700">&#128424; PDF</td><td style="padding:8px">Abre a tela de impressão. Escolha <b>"Salvar como PDF"</b> no destino da impressora.</td></tr>
+    </table>
+
+    <h3 style="color:#183EFF;margin:15px 0 8px;font-size:13pt;border-bottom:2px solid #00C100;padding-bottom:5px">Barra de Ferramentas - Linha 2 (Inferior)</h3>
+
+    <h4 style="color:#022A69;margin:10px 0 5px">Fonte e Tamanho</h4>
+    <p><b>Selecione o texto primeiro</b>, depois escolha a fonte ou tamanho desejado no menu dropdown.</p>
+
+    <h4 style="color:#022A69;margin:10px 0 5px">Formatação (N I S abc)</h4>
+    <table style="width:100%;border-collapse:collapse;font-size:10pt;margin:8px 0">
+      <tr style="background:#E8EEFF"><td style="padding:6px;font-weight:700;width:80px"><b>N</b></td><td style="padding:6px"><b>Negrito</b> - Deixa o texto grosso. Atalho: <b>Ctrl+B</b></td></tr>
+      <tr><td style="padding:6px;font-weight:700"><i>I</i></td><td style="padding:6px"><b>Itálico</b> - Deixa o texto inclinado. Atalho: <b>Ctrl+I</b></td></tr>
+      <tr style="background:#E8EEFF"><td style="padding:6px;font-weight:700"><u>S</u></td><td style="padding:6px"><b>Sublinhado</b> - Linha embaixo do texto. Atalho: <b>Ctrl+U</b></td></tr>
+      <tr><td style="padding:6px;font-weight:700"><s>abc</s></td><td style="padding:6px"><b>Tachado</b> - Linha cortando o texto ao meio</td></tr>
+    </table>
+
+    <h4 style="color:#022A69;margin:10px 0 5px">Cores</h4>
+    <p><b>Cor</b> = muda a cor da letra. <b>Fundo</b> = destaca com cor de fundo (marca-texto). Selecione o texto antes de usar.</p>
+
+    <h4 style="color:#022A69;margin:10px 0 5px">Alinhamento</h4>
+    <p>Alinha o parágrafo: esquerda, centro, direita ou justificado (dos dois lados).</p>
+
+    <h4 style="color:#022A69;margin:10px 0 5px">Espaçamento</h4>
+    <p><b>&#9650;+</b> e <b>&#9650;-</b> = aumenta/diminui espaço <b>acima</b> do parágrafo.<br>
+    <b>&#9660;+</b> e <b>&#9660;-</b> = aumenta/diminui espaço <b>abaixo</b> do parágrafo.<br>
+    Coloque o cursor no parágrafo que quer ajustar e clique nos botões.</p>
+
+    <h4 style="color:#022A69;margin:10px 0 5px">Linha e Recuo</h4>
+    <p><b>Linha</b> = espaço entre linhas dentro do parágrafo (1.0 = junto, 2.0 = espaçado).<br>
+    <b>&#8680;</b> = empurra para a direita (Tab). <b>&#8678;</b> = volta para a esquerda (Shift+Tab).</p>
+
+    <h3 style="color:#183EFF;margin:15px 0 8px;font-size:13pt;border-bottom:2px solid #00C100;padding-bottom:5px">Inserir e Excluir</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:10pt;margin:8px 0">
+      <tr style="background:#E8EEFF"><td style="padding:8px;font-weight:700;width:140px">&#9473; Linha</td><td style="padding:8px">Insere uma linha divisória horizontal</td></tr>
+      <tr><td style="padding:8px;font-weight:700">&#128247; Img</td><td style="padding:8px">Abre janela para escolher uma imagem do computador e inserir no documento</td></tr>
+      <tr style="background:#E8EEFF"><td style="padding:8px;font-weight:700">&#182; Parágrafo</td><td style="padding:8px"><b>Cria um espaço editável fora da caixa/card.</b> Clique dentro do card e aperte este botão (ou tecla <b>Escape</b>) para sair da caixa e poder digitar/colar abaixo dela.</td></tr>
+      <tr><td style="padding:8px;font-weight:700">&#128465; Excluir</td><td style="padding:8px"><b>Remove o card/caixa/bloco inteiro</b> onde está o cursor. Aparece uma confirmação antes de apagar.</td></tr>
+      <tr style="background:#E8EEFF"><td style="padding:8px;font-weight:700">&#10060; Limpar</td><td style="padding:8px">Remove toda formatação (negrito, cores, etc.) do texto selecionado</td></tr>
+    </table>
+
+    <h3 style="color:#183EFF;margin:15px 0 8px;font-size:13pt;border-bottom:2px solid #00C100;padding-bottom:5px">Trocar Imagens</h3>
+    <p><b>Clique em qualquer imagem</b> do documento (não nas barras laterais). Uma janela vai abrir para você escolher a nova imagem do seu computador.</p>
+
+    <h3 style="color:#183EFF;margin:15px 0 8px;font-size:13pt;border-bottom:2px solid #00C100;padding-bottom:5px">Atalhos do Teclado</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:10pt;margin:8px 0">
+      <tr style="background:#E8EEFF"><td style="padding:6px;font-weight:700;width:120px">Ctrl + S</td><td style="padding:6px">Salvar documento</td></tr>
+      <tr><td style="padding:6px;font-weight:700">Ctrl + Z</td><td style="padding:6px">Desfazer</td></tr>
+      <tr style="background:#E8EEFF"><td style="padding:6px;font-weight:700">Ctrl + Y</td><td style="padding:6px">Refazer</td></tr>
+      <tr><td style="padding:6px;font-weight:700">Ctrl + B</td><td style="padding:6px">Negrito</td></tr>
+      <tr style="background:#E8EEFF"><td style="padding:6px;font-weight:700">Ctrl + I</td><td style="padding:6px">Itálico</td></tr>
+      <tr><td style="padding:6px;font-weight:700">Ctrl + U</td><td style="padding:6px">Sublinhado</td></tr>
+      <tr style="background:#E8EEFF"><td style="padding:6px;font-weight:700">Tab</td><td style="padding:6px">Aumentar recuo</td></tr>
+      <tr><td style="padding:6px;font-weight:700">Shift + Tab</td><td style="padding:6px">Diminuir recuo</td></tr>
+      <tr style="background:#E8EEFF"><td style="padding:6px;font-weight:700">Escape</td><td style="padding:6px">Sair de um card/caixa (inserir parágrafo abaixo)</td></tr>
+    </table>
+
+    <h3 style="color:#183EFF;margin:15px 0 8px;font-size:13pt;border-bottom:2px solid #00C100;padding-bottom:5px">Dicas Importantes</h3>
+    <ul style="margin-left:5mm;padding-left:3mm">
+      <li><b>Sempre salve</b> (Ctrl+S) antes de fechar o navegador para não perder alterações.</li>
+      <li>Para <b>gerar PDF</b>, volte ao Modo Páginas antes de imprimir.</li>
+      <li>O arquivo funciona <b>100% offline</b> - não precisa de internet ou terminal.</li>
+      <li>Você pode enviar o arquivo HTML para sua equipe e todos podem editar no próprio navegador.</li>
+      <li><b>Duplo clique</b> em área vazia da página cria um parágrafo para digitar.</li>
+    </ul>
+
+    <div style="margin-top:20px;padding:12px 16px;background:#E8EEFF;border-radius:8px;border-left:4px solid #183EFF">
+      <b>Precisa de ajuda?</b> Passe o mouse sobre qualquer botão da barra de ferramentas para ver uma explicação detalhada do que ele faz.
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+// === SISTEMA DE EDIÇÃO ===
+let editMode = true;
+
+function cmd(c) { document.execCommand(c, false, null); }
+function cmdVal(c, v) { document.execCommand(c, false, v); }
+
+function enableEdit() {
+  document.querySelectorAll('.page-content').forEach(el => el.contentEditable = 'true');
+  document.querySelectorAll('.cover-ministry-text,.cover-ministry-sub,.cover-badge,.cover-title,.cover-year').forEach(el => el.contentEditable = 'true');
+}
+function disableEdit() {
+  document.querySelectorAll('[contenteditable]').forEach(el => el.contentEditable = 'false');
+}
+function toggleEdit() {
+  editMode = !editMode;
+  const btn = document.getElementById('btnToggle');
+  if (editMode) { enableEdit(); btn.innerHTML = '&#128274; Bloquear'; showStatus('Edição ativada'); }
+  else { disableEdit(); btn.innerHTML = '&#9998; Editar'; showStatus('Edição bloqueada'); }
+}
+function showStatus(msg) {
+  const s = document.getElementById('editStatus');
+  s.textContent = msg;
+  setTimeout(() => s.textContent = 'Clique em qualquer texto para editar', 3000);
+}
+
+// === ESPAÇAMENTO ===
+function getSelectedBlock() {
+  const sel = window.getSelection();
+  if (!sel.rangeCount) return null;
+  let node = sel.anchorNode;
+  while (node && node.nodeType !== 1) node = node.parentNode;
+  if (!node) return null;
+  // Subir até o bloco mais próximo dentro de page-content
+  const blocks = ['P','H1','H2','H3','H4','DIV','UL','OL','LI','TABLE','BLOCKQUOTE'];
+  while (node && !blocks.includes(node.tagName)) {
+    if (node.classList && (node.classList.contains('page-content') || node.classList.contains('page'))) break;
+    node = node.parentNode;
+  }
+  return node;
+}
+
+function ajustarEspaco(tipo) {
+  const el = getSelectedBlock();
+  if (!el) return;
+  const cs = getComputedStyle(el);
+  if (tipo === 'mais') {
+    let mt = parseFloat(cs.marginTop) || 0;
+    el.style.marginTop = (mt + 2) + 'mm';
+    showStatus('Espaço acima: ' + el.style.marginTop);
+  } else if (tipo === 'menos') {
+    let mt = parseFloat(cs.marginTop) || 0;
+    el.style.marginTop = Math.max(0, mt - 2) + 'mm';
+    showStatus('Espaço acima: ' + el.style.marginTop);
+  } else if (tipo === 'maisB') {
+    let mb = parseFloat(cs.marginBottom) || 0;
+    el.style.marginBottom = (mb + 2) + 'mm';
+    showStatus('Espaço abaixo: ' + el.style.marginBottom);
+  } else if (tipo === 'menosB') {
+    let mb = parseFloat(cs.marginBottom) || 0;
+    el.style.marginBottom = Math.max(0, mb - 2) + 'mm';
+    showStatus('Espaço abaixo: ' + el.style.marginBottom);
+  }
+}
+
+function ajustarLineHeight(val) {
+  if (!val) return;
+  const el = getSelectedBlock();
+  if (!el) return;
+  el.style.lineHeight = val;
+  showStatus('Espaçamento de linha: ' + val);
+}
+
+// === INSERIR IMAGEM ===
+function inserirImagem() {
+  const input = document.createElement('input');
+  input.type = 'file'; input.accept = 'image/*';
+  input.onchange = function() {
+    const file = input.files[0]; if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function(ev) {
+      document.execCommand('insertImage', false, ev.target.result);
+      showStatus('Imagem inserida!');
+    };
+    reader.readAsDataURL(file);
+  };
+  input.click();
+}
+
+// === SALVAR HTML ===
+function salvarHTML() {
+  const clone = document.documentElement.cloneNode(true);
+  clone.querySelectorAll('[contenteditable]').forEach(el => el.removeAttribute('contenteditable'));
+  // Remover toolbar do clone
+  const tb = clone.querySelector('#editToolbar');
+  if (tb) tb.remove();
+  // Remover script do clone
+  clone.querySelectorAll('script').forEach(s => s.remove());
+  const html = '<!DOCTYPE html>\n' + clone.outerHTML;
+  const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'Guia_Territorios_Diagramado.html';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  showStatus('Arquivo salvo!');
+}
+
+// === TROCAR IMAGENS (clique) ===
+document.addEventListener('click', function(e) {
+  if (!editMode) return;
+  const img = e.target.closest('img');
+  if (!img) return;
+  if (img.closest('.page-sidebar, .page-sidebar-right')) return;
+  e.preventDefault(); e.stopPropagation();
+  const input = document.createElement('input');
+  input.type = 'file'; input.accept = 'image/*';
+  input.onchange = function() {
+    const file = input.files[0]; if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function(ev) { img.src = ev.target.result; showStatus('Imagem trocada!'); };
+    reader.readAsDataURL(file);
+  };
+  input.click();
+});
+
+// === ATALHOS ===
+document.addEventListener('keydown', function(e) {
+  if (e.ctrlKey && e.key === 's') { e.preventDefault(); salvarHTML(); }
+});
+
+// === TAB para recuo ===
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Tab' && editMode) {
+    e.preventDefault();
+    if (e.shiftKey) cmd('outdent');
+    else cmd('indent');
+  }
+});
+
+// === AJUDA ===
+function abrirAjuda() { document.getElementById('modalAjuda').style.display = 'block'; }
+function fecharAjuda() { document.getElementById('modalAjuda').style.display = 'none'; }
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'F1') { e.preventDefault(); abrirAjuda(); }
+});
+
+// === MODO CONTÍNUO ===
+let modoContinuo = false;
+function toggleModoContinuo() {
+  modoContinuo = !modoContinuo;
+  document.body.classList.toggle('modo-continuo', modoContinuo);
+  const btn = document.getElementById('btnModo');
+  if (modoContinuo) {
+    btn.innerHTML = '&#128196; Modo Páginas';
+    showStatus('Modo contínuo ativado – sem quebras de página');
+  } else {
+    btn.innerHTML = '&#128196; Modo Contínuo';
+    showStatus('Modo páginas A4 restaurado');
+  }
+}
+
+// === INSERIR PARÁGRAFO (sair de cards/caixas) ===
+function inserirParagrafo() {
+  const sel = window.getSelection();
+  if (!sel.rangeCount) return;
+  let node = sel.anchorNode;
+  // Subir até encontrar um elemento bloco direto dentro de page-content
+  while (node && node.nodeType !== 1) node = node.parentNode;
+  if (!node) return;
+  // Achar o card ou bloco pai mais próximo
+  let target = node;
+  const containers = ['card','card-blue','card-green','card-yellow','card-orange',
+                      'modelo-b','modelo-h','result-box','result-ok','result-no',
+                      'flow','section-bar','step'];
+  while (target && target.parentNode) {
+    if (target.classList) {
+      for (const cls of containers) {
+        if (target.classList.contains(cls)) {
+          // Encontrou o card/container – inserir p depois dele
+          const p = document.createElement('p');
+          p.innerHTML = '<br>';
+          target.parentNode.insertBefore(p, target.nextSibling);
+          // Mover cursor para o novo parágrafo
+          const range = document.createRange();
+          range.setStart(p, 0);
+          range.collapse(true);
+          sel.removeAllRanges();
+          sel.addRange(range);
+          p.focus();
+          showStatus('Parágrafo inserido após o bloco');
+          return;
+        }
+      }
+    }
+    if (target.classList && target.classList.contains('page-content')) break;
+    target = target.parentNode;
+  }
+  // Se não achou card, inserir após o bloco atual
+  const block = getSelectedBlock();
+  if (block && block.parentNode) {
+    const p = document.createElement('p');
+    p.innerHTML = '<br>';
+    block.parentNode.insertBefore(p, block.nextSibling);
+    const range = document.createRange();
+    range.setStart(p, 0);
+    range.collapse(true);
+    sel.removeAllRanges();
+    sel.addRange(range);
+    showStatus('Parágrafo inserido');
+  }
+}
+
+// === EXCLUIR BLOCO/CARD ===
+function excluirBloco() {
+  const sel = window.getSelection();
+  if (!sel.rangeCount) { showStatus('Clique dentro de um bloco primeiro'); return; }
+  let node = sel.anchorNode;
+  while (node && node.nodeType !== 1) node = node.parentNode;
+  if (!node) return;
+  // Procurar o card/container/bloco mais próximo
+  const containers = ['card','card-blue','card-green','card-yellow','card-orange',
+                      'modelo-b','modelo-h','result-box','result-ok','result-no',
+                      'flow','flow-box','section-bar','step','badge',
+                      'card-title','ref','footnote','div','siglas',
+                      'toc-item','toc-section'];
+  let target = node;
+  let found = false;
+  while (target && target.parentNode) {
+    if (target.classList) {
+      for (const cls of containers) {
+        if (target.classList.contains(cls)) { found = true; break; }
+      }
+      if (found) break;
+      if (target.classList.contains('page-content')) break;
+    }
+    target = target.parentNode;
+  }
+  if (!found) {
+    // Se não achou card, excluir o bloco de texto atual (p, h2, h3, h4, ul, ol, table)
+    const block = getSelectedBlock();
+    if (block && block.parentNode && !block.classList.contains('page-content') && !block.classList.contains('page')) {
+      const nome = block.tagName.toLowerCase();
+      if (confirm('Excluir este elemento <' + nome + '>?')) {
+        block.parentNode.removeChild(block);
+        showStatus('Elemento <' + nome + '> excluído');
+      }
+    } else {
+      showStatus('Nenhum bloco selecionado');
+    }
+    return;
+  }
+  // Se achou modelo-b ou modelo-h, pegar o par completo (header + body do modelo)
+  if (target.classList.contains('modelo-b') || target.classList.contains('modelo-h')) {
+    let mH = target, mB = target;
+    if (target.classList.contains('modelo-b')) {
+      mH = target.previousElementSibling;
+    } else {
+      mB = target.nextElementSibling;
+    }
+    const nome = mH ? (mH.querySelector('h3') ? mH.querySelector('h3').textContent : 'Modelo') : 'Modelo';
+    if (confirm('Excluir o modelo inteiro "' + nome.trim() + '"?')) {
+      if (mH && mH.classList.contains('modelo-h')) mH.parentNode.removeChild(mH);
+      if (mB && mB.classList.contains('modelo-b')) mB.parentNode.removeChild(mB);
+      showStatus('Modelo excluído');
+    }
+    return;
+  }
+  // Para result-box, excluir o container inteiro
+  if (target.classList.contains('result-ok') || target.classList.contains('result-no')) {
+    const rb = target.closest('.result-box');
+    if (rb) target = rb;
+  }
+  const desc = target.textContent.substring(0, 50).trim() + '...';
+  if (confirm('Excluir este bloco?\n\n"' + desc + '"')) {
+    target.parentNode.removeChild(target);
+    showStatus('Bloco excluído');
+  }
+}
+
+// === ESCAPE para sair de cards/caixas ===
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && editMode) {
+    e.preventDefault();
+    inserirParagrafo();
+  }
+});
+
+// === DUPLO CLIQUE em área vazia da página insere parágrafo ===
+document.addEventListener('dblclick', function(e) {
+  if (!editMode) return;
+  const pageContent = e.target.closest('.page-content');
+  if (!pageContent) return;
+  // Se clicou diretamente no page-content (área vazia), inserir parágrafo no final
+  if (e.target === pageContent || e.target.classList.contains('page-content')) {
+    const p = document.createElement('p');
+    p.innerHTML = '<br>';
+    pageContent.appendChild(p);
+    const range = document.createRange();
+    range.setStart(p, 0);
+    range.collapse(true);
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    showStatus('Parágrafo inserido na área vazia');
+  }
+});
+
+enableEdit();
+</script>
+
+</body>
+</html>
