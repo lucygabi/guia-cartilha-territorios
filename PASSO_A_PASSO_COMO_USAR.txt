@@ -1,0 +1,109 @@
+============================================================
+   PASSO A PASSO - COMO PEDIR ALTERAÇÕES NO PROJETO
+   Guia Cartilha Territórios
+============================================================
+
+QUANDO USAR:
+- Quando quiser adicionar botões novos no editor
+- Quando quiser mudar funcionalidades do código
+- Quando quiser ajustes que não dá para fazer pelo navegador
+- Quando quiser atualizar o projeto no GitHub
+
+============================================================
+   PASSO 1 - ABRIR O TERMINAL UBUNTU
+============================================================
+
+Opção A (mais fácil):
+  - Clique no menu Iniciar do Windows
+  - Digite "Ubuntu"
+  - Clique no ícone do Ubuntu para abrir
+
+Opção B:
+  - Aperte as teclas Windows + R
+  - Digite: wsl
+  - Aperte Enter
+
+============================================================
+   PASSO 2 - ENTRAR NA PASTA DO PROJETO
+============================================================
+
+Copie e cole este comando no terminal e aperte Enter:
+
+cd "/mnt/c/Users/lucyb/OneDrive/Documentos/PROJETOS/Projeto Edi e Debora - cartilha"
+
+============================================================
+   PASSO 3 - INICIAR A CONVERSA COM O CLAUDE
+============================================================
+
+Digite no terminal e aperte Enter:
+
+claude
+
+Espere ele carregar (aparece o símbolo >)
+
+============================================================
+   PASSO 4 - PEDIR O QUE VOCÊ PRECISA
+============================================================
+
+Agora é só digitar o que quer, por exemplo:
+
+"Adiciona um botão de duplicar bloco no arquivo
+Guia_Territorios_Diagramado.html"
+
+ou
+
+"Muda a cor do cabeçalho dos modelos para verde no arquivo
+Guia_Territorios_Diagramado.html"
+
+ou
+
+"Adiciona um botão para inserir tabela no editor do arquivo
+Guia_Territorios_Diagramado.html"
+
+DICA: Sempre mencione o nome do arquivo
+"Guia_Territorios_Diagramado.html" no seu pedido
+para o Claude saber qual arquivo mexer.
+
+============================================================
+   PASSO 5 - SALVAR NO GITHUB (opcional)
+============================================================
+
+Depois que o Claude fizer as alterações, se quiser salvar
+no GitHub, basta pedir:
+
+"Salva as alterações no GitHub"
+
+Ele vai fazer o commit e push automaticamente.
+
+============================================================
+   RESUMO RÁPIDO (cola na geladeira!)
+============================================================
+
+1. Abrir Ubuntu
+2. Colar: cd "/mnt/c/Users/lucyb/OneDrive/Documentos/PROJETOS/Projeto Edi e Debora - cartilha"
+3. Digitar: claude
+4. Pedir o que precisa
+5. (Opcional) Pedir: "Salva no GitHub"
+
+============================================================
+   INFORMAÇÕES DO PROJETO
+============================================================
+
+Arquivo principal: Guia_Territorios_Diagramado.html
+Pasta no computador: C:\Users\lucyb\OneDrive\Documentos\PROJETOS\Projeto Edi e Debora - cartilha\
+GitHub: https://github.com/lucygabi/guia-cartilha-territorios
+
+============================================================
+   LEMBRETE IMPORTANTE
+============================================================
+
+- Para EDITAR TEXTOS e TROCAR IMAGENS: abra o HTML direto
+  no navegador, não precisa do terminal.
+
+- Para MUDAR O CÓDIGO (adicionar botões, funcionalidades):
+  aí sim precisa seguir este passo a passo.
+
+- O arquivo funciona 100% OFFLINE, não precisa de internet
+  para editar no navegador.
+
+============================================================
