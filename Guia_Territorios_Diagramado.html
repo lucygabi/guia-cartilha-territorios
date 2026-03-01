@@ -1704,7 +1704,7 @@ d) Definir a recomposição do Codeter conforme critérios obrigatórios de comp
   <button onclick="toggleEdit()" id="btnToggle" title="BLOQUEAR/DESBLOQUEAR: Trava a edição para não alterar nada sem querer. Clique de novo para desbloquear.">&#128274; Bloquear</button>
   <button class="btn-mode" onclick="toggleModoContinuo()" id="btnModo" title="MODO CONTÍNUO: Remove os espaços em branco entre as páginas, mostrando o documento corrido. Clique de novo para voltar ao modo de páginas A4 separadas.">&#128196; Modo Contínuo</button>
   <div class="toolbar-sep"></div>
-  <button class="btn-save" onclick="salvarHTML()" title="SALVAR: Baixa o documento editado como arquivo HTML para o seu computador (atalho: Ctrl+S)">&#128190; Salvar</button>
+  <button class="btn-save" onclick="salvarHTML()" title="SALVAR: Na primeira vez, escolha o arquivo original para substituir. Depois, salva direto no mesmo arquivo sem perguntar (atalho: Ctrl+S)">&#128190; Salvar</button>
   <button class="btn-pdf" onclick="window.print()" title="GERAR PDF: Abre a tela de impressão do navegador. Escolha 'Salvar como PDF' para gerar o PDF.">&#128424; PDF</button>
   <button onclick="abrirAjuda()" title="AJUDA: Abre o guia completo de como usar todas as ferramentas de edição" style="background:rgba(255,255,255,.2);font-weight:700;padding:4px 12px">? Ajuda</button>
 </div>
@@ -1978,22 +1978,57 @@ function inserirImagem() {
 }
 
 // === SALVAR HTML ===
-function salvarHTML() {
+let fileHandle = null; // Guarda referência ao arquivo para salvar no mesmo lugar
+
+function gerarHTMLLimpo() {
   const clone = document.documentElement.cloneNode(true);
   clone.querySelectorAll('[contenteditable]').forEach(el => el.removeAttribute('contenteditable'));
-  // Remover toolbar do clone
   const tb = clone.querySelector('#editToolbar');
   if (tb) tb.remove();
-  // Remover script do clone
+  const modal = clone.querySelector('#modalAjuda');
+  if (modal) modal.remove();
   clone.querySelectorAll('script').forEach(s => s.remove());
-  const html = '<!DOCTYPE html>\n' + clone.outerHTML;
+  return '<!DOCTYPE html>\n' + clone.outerHTML;
+}
+
+async function salvarHTML() {
+  // Tenta usar a API moderna (File System Access) para salvar no mesmo arquivo
+  if ('showSaveFilePicker' in window) {
+    try {
+      // Se já tem um handle salvo, usa ele (salva direto sem perguntar)
+      if (!fileHandle) {
+        fileHandle = await window.showSaveFilePicker({
+          suggestedName: 'Guia_Territorios_Diagramado.html',
+          types: [{ description: 'Arquivo HTML', accept: { 'text/html': ['.html'] } }]
+        });
+      }
+      const writable = await fileHandle.createWritable();
+      await writable.write(gerarHTMLLimpo());
+      await writable.close();
+      showStatus('Arquivo atualizado com sucesso!');
+    } catch (err) {
+      if (err.name === 'AbortError') {
+        showStatus('Salvamento cancelado');
+      } else {
+        // Fallback para download se der erro
+        salvarComoDownload();
+      }
+    }
+  } else {
+    // Navegador não suporta - usa download
+    salvarComoDownload();
+  }
+}
+
+function salvarComoDownload() {
+  const html = gerarHTMLLimpo();
   const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
   a.download = 'Guia_Territorios_Diagramado.html';
   a.click();
   URL.revokeObjectURL(a.href);
-  showStatus('Arquivo salvo!');
+  showStatus('Arquivo baixado (substitua o original manualmente)');
 }
 
 // === TROCAR IMAGENS (clique) ===
