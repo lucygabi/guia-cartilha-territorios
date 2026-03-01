@@ -155,6 +155,27 @@ table tbody tr:nth-child(even){background:var(--bg-light)}
 .edit-toolbar button.btn-mode{background:#7C3AED;border-color:#6D28D9;font-weight:600}
 .edit-toolbar button.btn-mode:hover{background:#6D28D9}
 .status{font-size:8pt;opacity:.7;margin-left:8px}
+/* CONTROLE DE EDIÇÃO EM EQUIPE */
+.edit-banner{display:none;position:fixed;top:68px;left:0;right:0;z-index:9998;padding:8px 20px;font-family:'Segoe UI',sans-serif;font-size:10.5pt;font-weight:600;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.edit-banner.ocupado{display:block;background:linear-gradient(90deg,#FFD600,#FFC107);color:#333}
+.edit-banner.livre{display:block;background:linear-gradient(90deg,#00C100,#00A000);color:#fff}
+.edit-banner .fechar-banner{background:none;border:none;font-size:14pt;cursor:pointer;margin-left:12px;vertical-align:middle;opacity:.6}
+.edit-banner .fechar-banner:hover{opacity:1}
+.modal-equipe{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);z-index:99999;padding:30px}
+.modal-equipe-box{max-width:500px;margin:80px auto;background:#fff;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.4);overflow:hidden}
+.modal-equipe-box h2{margin:0;background:linear-gradient(135deg,#022A69,#183EFF);color:#fff;padding:18px 25px;font-size:14pt;border:none}
+.modal-equipe-box .corpo{padding:20px 25px}
+.modal-equipe-box label{font-weight:600;font-size:10.5pt;display:block;margin-bottom:5px;color:#333}
+.modal-equipe-box input{width:100%;padding:10px 14px;font-size:11pt;border:2px solid #ddd;border-radius:8px;margin-bottom:15px}
+.modal-equipe-box input:focus{border-color:#183EFF;outline:none}
+.modal-equipe-box .btns{display:flex;gap:10px;margin-top:10px}
+.modal-equipe-box .btns button{flex:1;padding:12px;font-size:11pt;font-weight:700;border:none;border-radius:8px;cursor:pointer}
+.modal-equipe-box .btn-iniciar{background:#00C100;color:#fff}
+.modal-equipe-box .btn-iniciar:hover{background:#00A000}
+.modal-equipe-box .btn-cancelar{background:#eee;color:#555}
+.modal-equipe-box .btn-cancelar:hover{background:#ddd}
+.log-edicoes{margin-top:15px;max-height:150px;overflow-y:auto;font-size:9pt;color:#666;border-top:1px solid #eee;padding-top:10px}
+.log-edicoes div{padding:3px 0;border-bottom:1px dotted #eee}
 body{padding-top:68px}
 /* Editable highlights */
 .page-content[contenteditable="true"]:focus{outline:2px dashed rgba(24,62,255,.3);outline-offset:2px}
@@ -173,6 +194,8 @@ body.modo-continuo .page-sidebar,body.modo-continuo .page-sidebar-right{height:1
 body.modo-continuo .cover{height:auto!important;min-height:auto!important}
 @media print{
 .edit-toolbar{display:none!important}
+.edit-banner{display:none!important}
+.modal-equipe{display:none!important}
 .insert-hint{display:none!important}
 body{background:#fff;padding-top:0}
 body.modo-continuo .page-footer{display:flex}
@@ -1701,6 +1724,7 @@ d) Definir a recomposição do Codeter conforme critérios obrigatórios de comp
   <button onclick="cmd('undo')" title="DESFAZER: Volta a última alteração que você fez (atalho: Ctrl+Z)">&#8630; Desfazer</button>
   <button onclick="cmd('redo')" title="REFAZER: Restaura a alteração que você desfez (atalho: Ctrl+Y)">&#8631; Refazer</button>
   <div class="toolbar-sep"></div>
+  <button onclick="abrirModalEquipe()" title="EQUIPE: Abre o painel para informar quem está editando. Assim a equipe sabe se alguém já está mexendo no arquivo." style="background:#FFB300;color:#333;border-color:#F9A825;font-weight:700">&#128101; Equipe</button>
   <button onclick="toggleEdit()" id="btnToggle" title="BLOQUEAR/DESBLOQUEAR: Trava a edição para não alterar nada sem querer. Clique de novo para desbloquear.">&#128274; Bloquear</button>
   <button class="btn-mode" onclick="toggleModoContinuo()" id="btnModo" title="MODO CONTÍNUO: Remove os espaços em branco entre as páginas, mostrando o documento corrido. Clique de novo para voltar ao modo de páginas A4 separadas.">&#128196; Modo Contínuo</button>
   <div class="toolbar-sep"></div>
@@ -1856,6 +1880,19 @@ d) Definir a recomposição do Codeter conforme critérios obrigatórios de comp
       <tr style="background:#E8EEFF"><td style="padding:8px;font-weight:700">&#10060; Limpar</td><td style="padding:8px">Remove toda formatação (negrito, cores, etc.) do texto selecionado</td></tr>
     </table>
 
+    <h3 style="color:#183EFF;margin:15px 0 8px;font-size:13pt;border-bottom:2px solid #00C100;padding-bottom:5px">Trabalho em Equipe</h3>
+    <p>O documento pode ser editado por várias pessoas (uma de cada vez):</p>
+    <ol style="margin-left:5mm;padding-left:3mm">
+      <li>Clique no botão <b>Equipe</b> (amarelo, na barra superior)</li>
+      <li>Digite seu nome e clique em <b>Começar a Editar</b></li>
+      <li>Um banner amarelo aparece avisando a todos que <b>você está editando</b></li>
+      <li>Quando terminar, clique em <b>Finalizar minha edição</b> no banner</li>
+      <li>Salve o arquivo (Ctrl+S) para que a próxima pessoa veja suas alterações</li>
+    </ol>
+    <div style="margin-top:10px;padding:10px 14px;background:#FFF3E0;border-radius:8px;border-left:4px solid #FFB300">
+      <b>Importante:</b> Para a equipe compartilhar o arquivo, coloquem numa <b>pasta compartilhada do OneDrive</b>. Assim todos acessam o mesmo arquivo. Editem <b>um de cada vez</b> — quando um terminar e salvar, o próximo abre e edita.
+    </div>
+
     <h3 style="color:#183EFF;margin:15px 0 8px;font-size:13pt;border-bottom:2px solid #00C100;padding-bottom:5px">Trocar Imagens</h3>
     <p><b>Clique em qualquer imagem</b> do documento (não nas barras laterais). Uma janela vai abrir para você escolher a nova imagem do seu computador.</p>
 
@@ -1883,6 +1920,28 @@ d) Definir a recomposição do Codeter conforme critérios obrigatórios de comp
 
     <div style="margin-top:20px;padding:12px 16px;background:#E8EEFF;border-radius:8px;border-left:4px solid #183EFF">
       <b>Precisa de ajuda?</b> Passe o mouse sobre qualquer botão da barra de ferramentas para ver uma explicação detalhada do que ele faz.
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- BANNER DE CONTROLE DE EDIÇÃO -->
+<div class="edit-banner" id="editBanner"></div>
+
+<!-- MODAL CONTROLE DE EQUIPE -->
+<div class="modal-equipe" id="modalEquipe">
+<div class="modal-equipe-box">
+  <h2>Controle de Edição em Equipe</h2>
+  <div class="corpo">
+    <div id="statusEquipe"></div>
+    <label for="nomeEditor">Seu nome:</label>
+    <input type="text" id="nomeEditor" placeholder="Ex: Maria, João, Ana...">
+    <div class="btns">
+      <button class="btn-iniciar" id="btnIniciarEdicao" onclick="iniciarEdicao()">Começar a Editar</button>
+      <button class="btn-cancelar" onclick="fecharModalEquipe()">Cancelar</button>
+    </div>
+    <div class="log-edicoes" id="logEdicoes">
+      <b>Histórico de edições:</b>
     </div>
   </div>
 </div>
@@ -1987,6 +2046,10 @@ function gerarHTMLLimpo() {
   if (tb) tb.remove();
   const modal = clone.querySelector('#modalAjuda');
   if (modal) modal.remove();
+  const modalEq = clone.querySelector('#modalEquipe');
+  if (modalEq) modalEq.remove();
+  const banner = clone.querySelector('#editBanner');
+  if (banner) banner.remove();
   clone.querySelectorAll('script').forEach(s => s.remove());
   return '<!DOCTYPE html>\n' + clone.outerHTML;
 }
@@ -2005,6 +2068,8 @@ async function salvarHTML() {
       const writable = await fileHandle.createWritable();
       await writable.write(gerarHTMLLimpo());
       await writable.close();
+      const editor = getEditorAtual();
+      if (editor) addLog(editor.nome + ' salvou o arquivo');
       showStatus('Arquivo atualizado com sucesso!');
     } catch (err) {
       if (err.name === 'AbortError') {
@@ -2062,6 +2127,130 @@ document.addEventListener('keydown', function(e) {
     else cmd('indent');
   }
 });
+
+// === CONTROLE DE EQUIPE ===
+const STORAGE_KEY = 'guia_territorios_editor';
+const LOG_KEY = 'guia_territorios_log';
+
+function getEditorAtual() {
+  try {
+    const data = localStorage.getItem(STORAGE_KEY);
+    if (!data) return null;
+    const info = JSON.parse(data);
+    // Expira depois de 2 horas automaticamente
+    if (Date.now() - info.timestamp > 2 * 60 * 60 * 1000) {
+      localStorage.removeItem(STORAGE_KEY);
+      return null;
+    }
+    return info;
+  } catch(e) { return null; }
+}
+
+function getLog() {
+  try {
+    const data = localStorage.getItem(LOG_KEY);
+    return data ? JSON.parse(data) : [];
+  } catch(e) { return []; }
+}
+
+function addLog(msg) {
+  const log = getLog();
+  const agora = new Date();
+  const hora = agora.toLocaleString('pt-BR');
+  log.unshift({ msg: msg, data: hora });
+  if (log.length > 20) log.length = 20; // Mantém só as últimas 20
+  localStorage.setItem(LOG_KEY, JSON.stringify(log));
+}
+
+function abrirModalEquipe() {
+  const modal = document.getElementById('modalEquipe');
+  const statusDiv = document.getElementById('statusEquipe');
+  const btnIniciar = document.getElementById('btnIniciarEdicao');
+  const editor = getEditorAtual();
+
+  // Mostrar log
+  const logDiv = document.getElementById('logEdicoes');
+  const logs = getLog();
+  logDiv.innerHTML = '<b>Histórico de edições:</b>';
+  if (logs.length === 0) {
+    logDiv.innerHTML += '<div style="color:#999">Nenhuma edição registrada ainda</div>';
+  } else {
+    logs.forEach(l => {
+      logDiv.innerHTML += '<div>' + l.data + ' — ' + l.msg + '</div>';
+    });
+  }
+
+  if (editor) {
+    statusDiv.innerHTML = '<div style="background:#FFF3E0;border:2px solid #FFB300;border-radius:8px;padding:12px;margin-bottom:15px;text-align:center">' +
+      '<div style="font-size:13pt;font-weight:700;color:#E65100">Arquivo em uso</div>' +
+      '<div style="font-size:11pt;margin-top:5px"><b>' + editor.nome + '</b> está editando</div>' +
+      '<div style="font-size:9pt;color:#888;margin-top:3px">Desde: ' + new Date(editor.timestamp).toLocaleString('pt-BR') + '</div>' +
+      '</div>';
+    btnIniciar.textContent = 'Assumir Edição (tomar para mim)';
+    btnIniciar.style.background = '#E65100';
+  } else {
+    statusDiv.innerHTML = '<div style="background:#E6FFE6;border:2px solid #00C100;border-radius:8px;padding:12px;margin-bottom:15px;text-align:center">' +
+      '<div style="font-size:13pt;font-weight:700;color:#008000">Arquivo livre para edição</div>' +
+      '<div style="font-size:9pt;color:#666;margin-top:3px">Ninguém está editando no momento</div>' +
+      '</div>';
+    btnIniciar.textContent = 'Começar a Editar';
+    btnIniciar.style.background = '#00C100';
+  }
+
+  modal.style.display = 'block';
+}
+
+function fecharModalEquipe() {
+  document.getElementById('modalEquipe').style.display = 'none';
+}
+
+function iniciarEdicao() {
+  const nome = document.getElementById('nomeEditor').value.trim();
+  if (!nome) { alert('Digite seu nome para continuar'); return; }
+
+  const editorAnterior = getEditorAtual();
+  if (editorAnterior) {
+    addLog(editorAnterior.nome + ' liberou a edição');
+  }
+
+  const info = { nome: nome, timestamp: Date.now() };
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(info));
+  addLog(nome + ' começou a editar');
+
+  fecharModalEquipe();
+  atualizarBanner();
+  enableEdit();
+  editMode = true;
+  document.getElementById('btnToggle').innerHTML = '&#128274; Bloquear';
+  showStatus('Edição iniciada por ' + nome);
+}
+
+function liberarEdicao() {
+  const editor = getEditorAtual();
+  if (editor) {
+    addLog(editor.nome + ' finalizou a edição');
+  }
+  localStorage.removeItem(STORAGE_KEY);
+  atualizarBanner();
+  showStatus('Edição liberada para a equipe');
+}
+
+function atualizarBanner() {
+  const banner = document.getElementById('editBanner');
+  const editor = getEditorAtual();
+  if (editor) {
+    banner.className = 'edit-banner ocupado';
+    banner.innerHTML = '&#128221; <b>' + editor.nome + '</b> está editando este documento' +
+      ' <button class="fechar-banner" onclick="liberarEdicao()" title="Liberar edição para a equipe">&#10004; Finalizar minha edição</button>';
+  } else {
+    banner.className = 'edit-banner livre';
+    banner.innerHTML = '&#9989; Documento livre — clique em <b>Equipe</b> para começar a editar';
+    setTimeout(() => { banner.style.display = 'none'; }, 5000);
+  }
+}
+
+// Ao carregar, verifica se tem alguém editando
+atualizarBanner();
 
 // === AJUDA ===
 function abrirAjuda() { document.getElementById('modalAjuda').style.display = 'block'; }
