@@ -1,0 +1,68 @@
+============================================================
+   EMAIL PARA A EQUIPE
+============================================================
+
+Assunto: Documento Diagramado do Guia de Territórios — Pronto para Edição
+
+Olá, equipe!
+
+Informo que finalizei a diagramação e o design do Guia de Homologações, Revalidações e Reconfigurações Territoriais.
+
+O documento foi desenvolvido em formato HTML com identidade visual completa do MDA e é totalmente editável diretamente no navegador (Chrome ou Edge), sem necessidade de instalar nenhum programa.
+
+O que vocês podem fazer diretamente no navegador:
+- Editar qualquer texto
+- Trocar imagens
+- Ajustar fontes, tamanhos, cores e espaçamentos
+- Inserir ou excluir blocos e parágrafos
+- Gerar PDF
+- Salvar as alterações no mesmo arquivo
+
+------------------------------------------------------------
+COMO ABRIR O ARQUIVO (IMPORTANTE - LEIA ANTES DE ABRIR)
+------------------------------------------------------------
+
+O arquivo está compartilhado no OneDrive na pasta Projeto Edi e Debora - cartilha.
+
+NÃO abra o arquivo clicando direto no OneDrive pelo navegador, pois desconfigura toda a diagramação e as imagens não aparecem.
+
+A forma correta de abrir é:
+
+Opção 1 — Pelo Explorador de Arquivos (recomendado):
+1. Abra o Explorador de Arquivos do Windows
+2. No menu lateral, clique em OneDrive
+3. Navegue até: Documentos > PROJETOS > Projeto Edi e Debora - cartilha
+4. Clique duas vezes no arquivo Guia_Territorios_Diagramado.html
+5. Ele vai abrir no Chrome ou Edge com tudo funcionando perfeitamente
+
+Opção 2 — Pelo site do OneDrive:
+1. Acesse o OneDrive pelo navegador
+2. Encontre o arquivo Guia_Territorios_Diagramado.html
+3. NÃO clique direto nele
+4. Clique nos três pontinhos (...) ao lado do nome do arquivo
+5. Clique em Baixar
+6. Abra o arquivo baixado na pasta de Downloads
+
+------------------------------------------------------------
+COMO EDITAR
+------------------------------------------------------------
+
+1. Ao abrir, a barra de ferramentas aparece no topo da tela
+2. Clique no botão ? Ajuda para ver o guia completo de todas as ferramentas
+3. Antes de editar, clique no botão amarelo Equipe, digite seu nome e clique em "Começar a Editar" — assim todos sabem quem está mexendo no arquivo
+4. Quando terminar, clique em "Finalizar minha edição" no banner amarelo que aparece no topo
+5. Salve com Ctrl+S e escolha substituir o mesmo arquivo
+
+REGRA IMPORTANTE: Editem um de cada vez. Quando terminar e salvar, avise no grupo que o arquivo está livre para o próximo editar.
+
+------------------------------------------------------------
+INSTRUÇÕES EXTRAS
+------------------------------------------------------------
+
+- Na pasta do projeto há um arquivo PASSO_A_PASSO_COMO_USAR.txt com instruções detalhadas
+- Caso precisem incluir alguma ferramenta, botão ou funcionalidade nova no editor, é só me avisar que eu solicito a alteração
+
+Qualquer dúvida, estou à disposição.
+
+Abraços,
+Luciana
